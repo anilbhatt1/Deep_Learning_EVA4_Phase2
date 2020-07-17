@@ -1,0 +1,10 @@
+name: s1_mobilenet
+dependencies:
+- pip
+- pip:
+  # works for regular pip packages
+  - https://download.pytorch.org/whl/cpu/torch-1.5.0%2Bcpu-cp38-cp38-linux_x86_64.whl
+  - torchvision==0.6.1
+  # and for wheels
+  # requests_toolbelt is for multipart form-data object
+  - requests_toolbelt
