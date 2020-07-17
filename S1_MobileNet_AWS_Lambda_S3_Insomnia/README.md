@@ -10,7 +10,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-# Deploying MobileNet V2 on AWS ![image](https://github.com/Gaju27/eva4phase2/blob/master/git_store_house/aws.JPG)
+# Deploying MobileNet V2 on AWS ![image](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S1_MobileNet_AWS_Lambda_S3_Insomnia/aws.jpg)
 ________
 
 <!-- TABLE OF CONTENTS -->
@@ -51,7 +51,7 @@ ________
          Setup with [Serverless](https://www.serverless.com/framework/docs/providers/aws/cli-reference/config-credentials/)
          
          1. Serverless will help us to deploy AWS lambda function from ubuntu local to AWS :cloud:
-         2. Mainly two files are involved in deploying lambda function - [handler.py](https://github.com/Gaju27/eva4phase2/blob/master/Session1/handler.py) and [Serverless.yml](https://github.com/Gaju27/eva4phase2/blob/master/Session1/serverless.yml)
+         2. Mainly two files are involved in deploying lambda function - [handler.py](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S1_MobileNet_AWS_Lambda_S3_Insomnia/handler.py) and [Serverless.yml](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S1_MobileNet_AWS_Lambda_S3_Insomnia/serverless.yml)
          
 ## Prerequisites
 
@@ -82,13 +82,13 @@ Distributed under the MIT License. See `LICENSE` for more information.
 # Results
 
 -   Input Labrador Dog image :point_down: will be uploaded via Insomnia that will trigger AWS Lambda :arrow_right: Execute the Mobilenet network :arrow_right: Classify the input image and return the response to Insomnia. 
-![aws_flow](https://github.com/Gaju27/eva4phase2/blob/master/git_store_house/aws_flow.png)
+![aws_flow](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S1_MobileNet_AWS_Lambda_S3_Insomnia/Flow_1.png)
 
 -   MobileNet_V2 is correctly predicting the [class](https://gist.github.com/yrevar/942d3a0ac09ec9e5eb3a) as 208: 'Labrador retriever'
    
-![dog](https://github.com/Gaju27/eva4phase2/blob/master/git_store_house/Yellow-Labrador-Retriever.jpg)
+![dog](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S1_MobileNet_AWS_Lambda_S3_Insomnia/Yellow-Labrador-Retriever.jpg)
 
-![image](https://github.com/Gaju27/eva4phase2/blob/master/Session1/outcome1.JPG)
+![image](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S1_MobileNet_AWS_Lambda_S3_Insomnia/outcome1.JPG)
 
 
 <!-- MARKDOWN LINKS & IMAGES -->
@@ -102,6 +102,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
 [issues-url]: https://github.com/othneildrew/Best-README-Template/issues
 [license-shield]: https://img.shields.io/github/license/othneildrew/Best-README-Template.svg?style=flat-square
-[license-url]: https://github.com/Gaju27/EVA/blob/master/LICENSE.txt
+[license-url]: https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/LICENSE.txt
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=flat-square&logo=linkedin&colorB=555
 
