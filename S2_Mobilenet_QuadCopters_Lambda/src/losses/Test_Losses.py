@@ -27,11 +27,14 @@ class Test_loss:
            test_loss      = 0
            test_accuracy  = 0 
            test_losses    = []
-           test_acc       = []
+           test_acc       = []           
            predicted_class= []
            actual_class   = []
            wrong_predict  = []
-           count_wrong    = 0 
+           correct_predict= []   
+           count_wrong    = 0
+           count_correct  = 0
+           correctly_predicted_class = []
            
            label_dict     = {0:0, 1:1, 2:2, 3:3, 4:4, 5:5, 6:6, 7:7, 8:8, 9:9}
            label_total    = {0:0, 1:0, 2:0, 3:0, 4:0, 5:0, 6:0, 7:0, 8:0, 9:0}
@@ -83,20 +86,24 @@ class Test_loss:
                       * labels_pred_max[i].item() -> Will work & return an integer
                     '''
                     
-                    #if current_epoch == (total_epoch - 1): 
-                    #       for i in range(len(labels_pred_max)):
-                    #           counter_key = ' '
-                    #           counter_key = label_dict.get(labels[i].item())   # Getting labels from 'label_dict'
-                    #           label_total[counter_key] += 1                    # Increasing total count of corresponding label
+                    if current_epoch == (total_epoch - 1): 
+                           for i in range(len(labels_pred_max)):
+                               counter_key = ' '
+                               counter_key = label_dict.get(labels[i].item())   # Getting labels from 'label_dict'
+                               label_total[counter_key] += 1                    # Increasing total count of corresponding label
 
-                    #          if labels_pred_max[i] == labels[i]:
-                    #              label_correct[counter_key] += 1               # Increasing correct count of corresponding label
-                    #           else:    
-                    #              if count_wrong   < 26:                                            # Capturing 26 wrongly predicted images for last epoch
-                    #                 wrong_predict.append(images[i])                                # with its predicted and actual class 
-                    #                 predicted_class.append(labels_pred_max[i].item())
-                    #                 actual_class.append(labels[i].item())
-                    #                 count_wrong += 1
+                               if labels_pred_max[i] == labels[i]:
+                                  label_correct[counter_key] += 1               # Increasing correct count of corresponding label
+                                  if count_correct < 26:                        # Capturing 26 correctly predicted images for last epoch 
+                                     correct_predict.append(images[i])
+                                     correctly_predicted_class.append(labels[i].item())   # Capturing the correctly predicted label
+                                     count_correct += 1 
+                               else:    
+                                  if count_wrong   < 26:                                            # Capturing 26 wrongly predicted images for last epoch
+                                     wrong_predict.append(images[i])                                # with its predicted and actual class 
+                                     predicted_class.append(labels_pred_max[i].item())
+                                     actual_class.append(labels[i].item())
+                                     count_wrong += 1
               
                 test_loss   /= total  # Calculating overall test loss for the epoch
                 test_losses.append(test_loss)    
@@ -115,4 +122,4 @@ class Test_loss:
                              
                 print('\nTest set: Average loss: {:.4f}, Test Accuracy: {:.2f}, LR : {:.6f}' .format(test_loss, test_accuracy, lr))
 
-           return test_losses, test_acc, wrong_predict, predicted_class, actual_class, label_total, label_correct
+           return test_losses, test_acc, wrong_predict, predicted_class, actual_class, label_total, label_correct, correct_predict, correctly_predicted_class
