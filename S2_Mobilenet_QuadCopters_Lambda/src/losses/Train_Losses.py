@@ -73,4 +73,4 @@ class Train_loss:
           train_acc.append(train_acc_batch)  # To capture only final batch accuracy of an epoch
           train_losses.append(loss)          # To capture only final batch loss of an epoch
         
-          return train_losses, train_acc         
+          return train_losses, train_acc, lr         
