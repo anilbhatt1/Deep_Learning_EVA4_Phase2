@@ -1,0 +1,35 @@
+from zipfile import ZipFile
+with ZipFile('/content/drive/My Drive/EVA4/ThumbnailData.zip', mode='r') as input:
+  input.extractall('.')
+  
+--> This statement will extract ThumbnailData.zip from gdrive to colab (not under any folders)
+--> There will be 4 folders which are exactly same as class names - ['Flying Birds', 'Large QuadCopters', 'Small QuadCopters', 'Winged Drones']
+
+---------------------------------------------
+
+def prepareData(root, clasees):
+  finaldata = []
+  for i in range(len(classes)):
+    path = root+"/"+classes[i]+"/"
+    xy = [[path+f, (i+1)] for f in os.listdir(path)]
+    finaldata.extend(xy)
+  random.shuffle(finaldata)
+  return finaldata
+
+class_names = ['Flying Birds', 'Large QuadCopters', 'Small QuadCopters', 'Winged Drones']
+dataset = prepareData("./Data", class_names)
+print(f'Dataset Size : {len(dataset)}')
+trainlen = int(len(dataset)*0.7)
+print(f'Trainset size : {trainlen},  Testset size : {len(dataset)-trainlen}')
+print(f'Sample Records {dataset[1:4]}')
+
+--> This section will prepare data in a list called 'finaldata'.
+--> 'finaldata' is a list of lists. Content will look as below:
+    [["./Data/Flying Birds/<imgname1.jpg>", 1],["./Data/Flying Birds/<imgname2.jpg>", 1],...,
+	 ["./Data/Large QuadCopters/<imgname1.jpg>", 2],["./Data/Large QuadCopters/<imgname2.jpg>", 2],...,
+	 ["./Data/Small QuadCopters/<imgname1.jpg>", 3],["./Data/Small QuadCopters/<imgname2.jpg>", 3],...,
+	 ["./Data/Winged Drones/<imgname1.jpg>", 3],["./Data/Winged Drones/<imgname2.jpg>", 3],...]
+--> This 'finaldata' list will be shuffled to make sure that images of different classes wont appear together.
+--> This will be split to train & test on 70:30 ratio.
+
+
