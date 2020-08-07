@@ -101,12 +101,10 @@ class Test_loss:
                                      correctly_actual_class.append(labels[i].item())               # Capturing the actual label
                                      count_correct += 1 
                                else:    
-                                  if count_wrong   < 26:                                            # Capturing 26 wrongly predicted images for last epoch
-                                     wrong_predict.append(images[i])                                # with its predicted and actual class 
-                                     predicted_class.append(labels_pred_max[i].item())
-                                     actual_class.append(labels[i].item())
-                                     count_wrong += 1
-              
+                                  wrong_predict.append(images[i])                                           # Capturing all wrongly predicted images for last epoch
+                                  predicted_class.append(labels_pred_max[i].item())                         # with its predicted and actual class                                    
+                                  actual_class.append(labels[i].item())
+                
                 test_loss   /= total  # Calculating overall test loss for the epoch
                 test_losses.append(test_loss)    
                                   
