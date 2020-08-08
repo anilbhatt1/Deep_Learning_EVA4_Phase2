@@ -20,7 +20,7 @@ ________
 * [License](#license)
 * [Group Members](#group-members)
 * [Mentor](#mentor)
-* [Approach](#Approach explanation)
+* [Approach](#Approach)
 * [Resize Strategy](#resize-strategy)
 * [Model Trained](#model-trained)
 * [Graphs](#graphs)
@@ -34,6 +34,7 @@ ________
 * [Serverless](https://www.serverless.com/) 
 * [Insomnia](https://insomnia.rest/download/)
 * [Google Colab](https://colab.research.google.com/)
+* [python-resize-image](https://pypi.org/project/python-resize-image/)
 
 <!-- LICENSE -->
 ## License
@@ -81,9 +82,28 @@ https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S2_Mobilenet
 
 <!-- RESIZE STRATEGY -->
 ## Resize Strategy
+- Input images that were crowd-sourced and stored in shared location were of various sizes. 
+- Inorder to bring uniformity resizing was essential. 
+- Hence, images were resized to (3, 224, 224) during pre-processing (part-1) listed above. 
+- Size (3,224, 224) was chosen because Mobilenet-V2 was pretrained against this input size. 
+- Images were opened using PIL -> Converted to RGB -> Then resized to (224, 224) using resizeimage.resize_thumbnail package. 
+- resize_thumbnail from python-resize-image was chosen because it maintains the ratio while trying its best to match the specified size. 
+- Since the input size images were of varied size this was a good option as it retains the aspect ratio (width:height) while downsizing/upsizing the images.
 
 <!-- MODEL TRAINED -->
 ## Model Trained
+- Torch version was downgraded to torch==1.5.1+cu92 and torchvision==0.6.1+cu92 because AWS lambda was not able to load model against latest 1.6.0 versions due to space constraints.
+- Mobilenet-V2 with 3,504,872 parameters was used for training. 
+- Pytorch model has 18 convolution layers. 
+- Pattern of Conv2d -> BN -> Relu6 -> Conv2d -> BN -> Relu6 -> Conv2d -> BN was used in each layers. 
+- First 15 layers used pre-trained weights while 16th, 17th & 18th layers were trained again with flying object input images chosen for this use-case. 
+- Also final linear classifier layer was customized to accept 4 custom classes (flying objects) instead of 1000 image-net classes. 
+- Model was trained for 20 epochs and achieved a test accuracy of 82.44%.
+- Reduce LR on plateau with initial learning rate of 0.3 against a batch-size of 32 was used.
+- Optimizer used was SGD with momentum = 0.9. L2_factor of 0.0001 and L1_factor of 0.0005 were also used inside train_loss function.
+- Model was saved in 2 ways:
+  1) Using torch.script -> Then torch.save. This version was saved whenever model became stable i.e. LR reduces by a factor of 0.1 or when it reaches 80% of total epochs. This is the GPU version and hence can be loaded again while re-training using Cuda GPU.
+  2) Using model.to('cpu') -> model.eval() -> torch.jit.trace -> torch.save. This was saved on final epoch. Model was converted to CPU, traced and then saved. This model was uploaded to AWS S3 bucket and was subsequently invoked via AWS Lambda using Insomnia. Model was converted to cpu because lambda function will work only on cpu saved models
 
 <!-- GRAPHS -->
 ## Accuracy, Train Loss, Test Loss vs Epochs graphs for train and test
