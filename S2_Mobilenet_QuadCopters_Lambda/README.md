@@ -111,24 +111,27 @@ https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S2_Mobilenet
 
 <!-- MISCLASSIFIED IMAGES -->
 ## 10 Misclassified Images of each of the 4 classes
+
 - FB -> Flying Birds
 - LQ -> Large Quadcopters
 - WD -> Winged Drones
 - SQ -> Small Quadcopters
+
 ![Misclassified Images](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S2_Mobilenet_QuadCopters_Lambda/Images/Misclassified.jpg)
 
 <!-- CORRECTLY CLASSIFIED IMAGES -->
 ## 25 Correctly classified Images 
+
 ![Correctly classified Images](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S2_Mobilenet_QuadCopters_Lambda/Images/Correctly_Classified.jpg)
 
 # Results
-https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S2_Mobilenet_QuadCopters_Lambda/Images/Insomnia_Screenshot.jpg
+
 -   Input Large Quadcopter image :point_down: will be uploaded via Insomnia that will trigger AWS Lambda :arrow_right: Execute the Mobilenet network :arrow_right: Classify the input image and return the response to Insomnia. 
 ![aws_flow](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S1_MobileNet_AWS_Lambda_S3_Insomnia/Flow_1.png)
 
 -   MobileNet_V2 is correctly predicting the [class](https://gist.github.com/yrevar/942d3a0ac09ec9e5eb3a) as 2: 'Large QuadCopters'
    
-![dog](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S1_MobileNet_AWS_Lambda_S3_Insomnia/Yellow-Labrador-Retriever.jpg)
+![Large Quad](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S2_Mobilenet_QuadCopters_Lambda/Images/Test_LargeQuad.jpg)
 
 ![image](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S2_Mobilenet_QuadCopters_Lambda/Images/Insomnia_Screenshot.jpg)
 
