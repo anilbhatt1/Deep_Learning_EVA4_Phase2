@@ -10,7 +10,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-# Deployment of Resnet, Mobilenet-v2 and Face-Alignment to AWS ![image](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S1_MobileNet_AWS_Lambda_S3_Insomnia/aws.jpg)
+# Deployment of Resnet, Mobilenet-v2 and Face-Alignment to AWS 
 ________
 
 # [Link to Web page for Restful API call](http://webdocsridevi.s3-website.ap-south-1.amazonaws.com/)
