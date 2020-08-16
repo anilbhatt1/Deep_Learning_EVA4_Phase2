@@ -53,7 +53,7 @@ def transform_image(image_bytes):
 def get_prediction(image_bytes):
     tensor = transform_image(image_bytes=image_bytes)
     print('Transformed the image')
-    return model(tensor).argmax().item()
+    return model(tensor)
 
 def classify_image(event, context):
     try:
