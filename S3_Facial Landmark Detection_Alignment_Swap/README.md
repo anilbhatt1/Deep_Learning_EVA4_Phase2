@@ -45,6 +45,7 @@ ________
 - 68 point landmark model can also be used but will be resource and time consuming, hence settled for 5 point landmark model
 - 5 points landmarked will be two points on left eye corners, two points on right eye corners and one point on nose tip
 - https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S3_Facial%20Landmark%20Detection_Alignment_Swap/EVA4P2_S3_Facial_Alignment_5_pt_model_V1.ipynb
+- ![Face Aligned image](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S1_MobileNet_AWS_Lambda_S3_Insomnia/aws.jpg)
 
 <!-- FACE SWAP -->
 ## Face Swap
@@ -55,7 +56,7 @@ ________
 - From this convex hull we will create mask then find [Delaunay traingulation](https://en.wikipedia.org/wiki/Delaunay_triangulation#:~:text=In%20mathematics%20and%20computational%20geometry,triangle%20in%20DT(P).) for convex hull points
 - We will impose mask of first face over second face and perform [seamless clone](https://docs.opencv.org/master/df/da0/group__photo__clone.html)
 - https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S3_Facial%20Landmark%20Detection_Alignment_Swap/EVA4P2_S3_Facial_Swap_Modi_Imran_V1_ipynb.ipynb
-
+- ![Face Swap image](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S1_MobileNet_AWS_Lambda_S3_Insomnia/aws.jpg)
 <!-- WEBPAGE -->
 ## Webpage for Restful API CALL and Integrate it with AWS
 
