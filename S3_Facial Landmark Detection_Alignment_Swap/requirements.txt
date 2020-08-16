@@ -1,0 +1,4 @@
+requests_toolbelt
+opencv-python==3.4.0.14
+dlib
+numpy
