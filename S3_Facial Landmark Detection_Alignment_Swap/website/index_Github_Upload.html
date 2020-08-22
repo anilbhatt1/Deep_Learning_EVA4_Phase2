@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Testing my deployments</title>
+        <script>
+            var loadFile = function(event) {
+                var image = document.getElementById('inpimage');
+                image.src = URL.createObjectURL(event.target.files[0]);
+            };
+        </script>
+    </head>
+
+    <body>
+        <table align="center" width="80%">
+            <tr>
+                <td><a href="index.html">Home</a></td>
+                <td><a href="resnet.html">Resnet</a></td>
+                <td><a href="mobnet.html">Mobile net(TL)</a></td>
+                <td><a href="facealign.html">Face Alignment</a></td>
+                <td><a href="faceswap.html">Face Swaping</a></td>
+            </tr>
+        </table>
+
+        
+        <h4 id='imageClassifiers'>Image Classifiers</h4>
+        <br><label for='mobilenetFileUpload'>Choose an image file you want to classify</label>
+        <table align=center width="70%">
+            <tr>
+                <td align=center><input type="file" id="mobilenetFileUpload" onchange="loadFile(event)"></td>
+                <td align=center><input type="button" id="btnMobileNetUpload" class="button" value="Classify Image"></td>
+                
+            </tr>
+            <tr>
+                <td><img id="inpimage" width =300 height=300></img></td>
+                <td><p id="result"></p></td>
+            </tr>
+        </table>
+        
+    </body>
+
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/upload.js"></script>
+</html>
