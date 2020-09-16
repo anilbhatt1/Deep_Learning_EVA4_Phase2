@@ -47,9 +47,11 @@ ________
 - D will be fed with both real and fake images. D loss function will backpropagate based on D's prediction (Real - 1, Fake - 0)
 - For each epoch, D will be trained first and G trained next.
 - For G also training is done via D. G will generate fake image again and D will predict (Real - 1, Fake - 0). Loss will backpropagate again but this time for G. 
-- Below image will help understand the flow Deep Convolutional GAN (DCGAN).
+- Below image will help understand the flow Deep Convolutional GAN (DCGAN)
+
  ![DCGAN Flow](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/DCGAN%20Flow%20diagram.jpg)
 - Below is an example of DCGAN with MNIST
+
  ![DCGAN Example with MNIST](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/DCGAN%20Flow%20with%20MNIST.jpg)
 - This work is dealing with generation of Indian cars using DCGAN 
 
@@ -59,10 +61,11 @@ ________
 - All cars selected were front facing as shown below with most of the images with white or no background.
 - This selection was done to make the network train with limited resource available via google colab.
 - File creation colab link is as below
-- https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/EVA4_P2_S6_File_Creation.ipynb
+ https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/EVA4_P2_S6_File_Creation.ipynb
 - Enitre input dataset that was used for zip file creation can be found in below drive location
-- https://drive.google.com/drive/folders/1SMv5kS5ZrMBbwTO35272Xyw3oB8oCMlE?usp=sharing
+ https://drive.google.com/drive/folders/1SMv5kS5ZrMBbwTO35272Xyw3oB8oCMlE?usp=sharing
 - Input image samples
+
  ![Input Sample Images](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/Input%20Sample%20images.png)
 
 <!-- Colab Notebook References -->
