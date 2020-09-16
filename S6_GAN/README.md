@@ -20,6 +20,7 @@ ________
 
 * [Prerequisites](#prerequisites)
 * [GAN Working](#ganworking)
+* [Data Preparation](#Data-Preparation)
 * [Colab Notebook References](#Colab-Notebook-References)
 * [License](#license)
 * [Group Members](#group-members)
@@ -29,6 +30,8 @@ ________
 
 * [Linux](https://www.tutorialspoint.com/ubuntu/index.htm)
 * [Python 3.8](https://www.python.org/downloads/) or Above
+* [Pytorch 1.5.1] 
+* [torchvision 0.6.1]
 * [AWS Account](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc)
 * [Serverless](https://www.serverless.com/) 
 * [Google Colab](https://colab.research.google.com/)
@@ -38,13 +41,29 @@ ________
 
 <!-- GAN Working -->
 ## GAN Working
-- In Face Alignment we will accept an input image and make it aligned as if the face is facing the camera
-- We are using 5 point landmark model from Dlib
-- 68 point landmark model can also be used but will be resource and time consuming, hence settled for 5 point landmark model
-- 5 points landmarked will be two points on left eye corners, two points on right eye corners and one point on nose tip
-- https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S3_Facial%20Landmark%20Detection_Alignment_Swap/EVA4P2_S3_Facial_Alignment_5_pt_model_V1.ipynb
+- Whole idea of GAN is running around 2 deep neural networks - Generator (G) and Discriminator(D)
+- Given a random set of latent vectors, Generator(G) will generate images.
+- Discriminator (D) will identify whether this image is real or fake. 
+- D will be fed with both real and fake images. D loss function will backpropagate based on D's prediction (Real - 1, Fake - 0)
+- For each epoch, D will be trained first and G trained next.
+- For G also training is done via D. G will generate fake image again and D will predict (Real - 1, Fake - 0). Loss will backpropagate again but this time for G. 
+- Below image will help understand the flow Deep Convolutional GAN (DCGAN).
+ ![DCGAN Flow](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/DCGAN%20Flow%20diagram.jpg)
+- Below is an example of DCGAN with MNIST
+ ![DCGAN Example with MNIST](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/DCGAN%20Flow%20with%20MNIST.jpg)
+- This work is dealing with generation of Indian cars using DCGAN 
 
- ![Face Aligned image](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S3_Facial%20Landmark%20Detection_Alignment_Swap/Images/Face%20Aligned.jpg)
+<!-- Data Preparation -->
+## Data Preparation
+- 505 images of Indian cars were selected from web.
+- All cars selected were front facing as shown below with most of the images with white or no background.
+- This selection was done to make the network train with limited resource available via google colab.
+- File creation colab link is as below
+- https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/EVA4_P2_S6_File_Creation.ipynb
+- Enitre input dataset that was used for zip file creation can be found in below drive location
+- https://drive.google.com/drive/folders/1SMv5kS5ZrMBbwTO35272Xyw3oB8oCMlE?usp=sharing
+- Input image samples
+ ![Input Sample Images](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/Input%20Sample%20images.png)
 
 <!-- Colab Notebook References -->
 ## Colab Notebook References
