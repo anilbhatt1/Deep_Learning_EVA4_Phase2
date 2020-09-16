@@ -20,7 +20,7 @@ ________
 
 * [Prerequisites](#prerequisites)
 * [GAN How it works](#ganworking)
-* [Colab Notebook References](#Colab Notebook References)
+* [Colab Notebook References](#Colab-Notebook-References)
 * [License](#license)
 * [Group Members](#group-members)
 * [Mentor](#mentor)
