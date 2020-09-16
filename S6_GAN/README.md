@@ -36,6 +36,7 @@ ________
 * [Html](https://www.w3schools.com/html/)
 * [Jquery](https://jquery.com/)
 
+<!-- GAN How it works -->
 ## GAN How it works
 - In Face Alignment we will accept an input image and make it aligned as if the face is facing the camera
 - We are using 5 point landmark model from Dlib
