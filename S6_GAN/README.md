@@ -19,7 +19,7 @@ ________
 ## Table of Contents
 
 * [Prerequisites](#prerequisites)
-* [GAN How it works](#GAN How it works)
+* [GAN How it works](#gan-working)
 * [Colab Notebook References](#Colab Notebook References)
 * [License](#license)
 * [Group Members](#group-members)
