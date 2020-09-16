@@ -10,7 +10,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-# Generative Adverserial Networks (GANs)
+# Generative Adversarial Networks (GANs)
 ________
 
 # [Link to Web page for Restful API call](To be updated)
@@ -19,9 +19,8 @@ ________
 ## Table of Contents
 
 * [Prerequisites](#prerequisites)
-* [Face Alignment](#face-alignment)
-* [Face Swap](#face-swap)
-* [Webpage For Restful Api Call And Integrate It With Aws](#webpage)
+* [GAN-How it works](#GAN-How it works)
+* [Colab Notebook References](#Colab Notebook References)
 * [License](#license)
 * [Group Members](#group-members)
 * [Mentor](#mentor)
@@ -36,10 +35,9 @@ ________
 * [Open-CV](https://pypi.org/project/opencv-python/)
 * [Html](https://www.w3schools.com/html/)
 * [Jquery](https://jquery.com/)
-* [Dlib](http://dlib.net/)
 
-<!-- FACE ALIGNMENT-->
-## Face Alignment
+<!-- GAN-How it works-->
+## GAN-How it works
 - In Face Alignment we will accept an input image and make it aligned as if the face is facing the camera
 - We are using 5 point landmark model from Dlib
 - 68 point landmark model can also be used but will be resource and time consuming, hence settled for 5 point landmark model
@@ -48,8 +46,8 @@ ________
 
  ![Face Aligned image](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S3_Facial%20Landmark%20Detection_Alignment_Swap/Images/Face%20Aligned.jpg)
 
-<!-- FACE SWAP -->
-## Face Swap
+<!-- Colab Notebook References -->
+## Colab Notebook References
 - We are using Dlib and Open-CV 
 - 68 point landmark model from Dlib is used for shape prediction of face (Detecting landmarks)
 - dlib.get_frontal_face_detector() is used for face detection
@@ -59,35 +57,6 @@ ________
 - https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S3_Facial%20Landmark%20Detection_Alignment_Swap/EVA4P2_S3_Facial_Swap_Modi_Imran_V1_ipynb.ipynb
 
 ![Face Swap image](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S3_Facial%20Landmark%20Detection_Alignment_Swap/Images/Modi_Imran_Swapped.jpg)
-<!-- WEBPAGE -->
-## Webpage for Restful API CALL and Integrate it with AWS
-
-1. Create an S3 bucket
-2. Upload to S3 bucket - 5-point landmark.dat, js folder, index.html & error.html.
-3. Go to Ubuntu
-4. Check if existing environment created for S1 & S2 will suffice. If anything additional or downgrading is required, better to create a dedicated environment for S3 alone with these specific requirements.
-5. If not required, activate old environment (S1_mobilenet) itself & proceed.
-6. Prepare handler.py in such a way that it points to correct buckets & correct model_paths we chose from web.
-   - Option Chosen from web : Resnet34 Classifier -> Should pick S3_BUCKET eva4p2-s1-anilbhatt1 -> MODEL_PATH s1_resnet34.pt
-   - Option Chosen from web : MobileNet_V2 Classifier -> Should pick S3_BUCKET eva4p2-s2-anilbhatt1 -> MODEL_PATH s2_mobilenetv2.pt
-   - Option Chosen from web : Facealignment  -> Should pick S3_BUCKET eva4p2-s3-anilbhatt1 -> MODEL_PATH shape_predictor_5_face_landmarks.dat
-7. Below section in handler.py will need modification to achieve point 6
-   - Define environment variables if they are not existing
-   - S3_BUCKET = os.environ['S3_BUCKET'] if 'S3_BUCKET' in os.environ else 'sridevi-session1-bucket'
-   - MODEL_PATH = os.environ['MODEL_PATH'] if 'MODEL_PATH' in os.environ else 'session1mobilenet.pt'
-8. We will also need to modify below function in handler.py to get back 'Aligned Face' image
-    def get_prediction(image_bytes):
-      tensor = transform_image(image_bytes = image_bytes)
-      return model(tensor).argmax().item()`
-
-9. Deploy lambda function using serverless, get the url for face alignment.
-
-10. Modify upload.js inside js folder inside AWS S3 bucket to include 3 functions as follows:
-    - Create 2 more functions similar to function uploadAndClassifyImage()
-    - Total 3 functions - one for Resnet, one for Mobilenet, one for facealignment
-    - Modify the function names, give corresponding AWS lambda Urls & also modify the button names accordingly.
-    - We can take resnet url (assignment1) from S1 API pathway, mobilnet url (assignment 2) from S2 API pathway and face alignment url (assignment) from S3 API pathway we created in AWS.
-11. Accordingly modify 'index.html' inside AWS S3 bucket to accommodate 3 bodies corresponding to 3 functions we created in 'upload.js'
 
 <!-- LICENSE -->
 ## License
