@@ -19,9 +19,9 @@ ________
 ## Table of Contents
 
 * [Prerequisites](#prerequisites)
-* [GAN Working](#ganworking)
+* [GAN Working](#gan-working)
 * [Data Preparation](#Data-Preparation)
-* [DCGAN DNN Archirecture](#DNN-Architecture)
+* [DCGAN DNN Architecture](#DNN-Architecture)
 * [Colab Notebook References](#Colab-Notebook-References)
 * [Model Weight references for future training](#model-weights)
 * [License](#license)
@@ -99,6 +99,7 @@ https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/EVA4P
 
 ![Images Generated](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/Yangyangii%20Approach_Cars%20Generated.jpg)
 
+<!-- Model weight References -->
 ## Model Weight references for future training
 - Refer below locations to download pretrained weights for future.
 - Pytorch tutorial approach
