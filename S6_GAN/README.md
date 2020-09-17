@@ -21,6 +21,7 @@ ________
 * [Prerequisites](#prerequisites)
 * [GAN Working](#ganworking)
 * [Data Preparation](#Data-Preparation)
+* [DNN Archirecture](#DNN-Architecture)
 * [Colab Notebook References](#Colab-Notebook-References)
 * [License](#license)
 * [Group Members](#group-members)
@@ -67,6 +68,21 @@ ________
 - Input image samples
 
  ![Input Sample Images](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/Input%20Sample%20images.png)
+
+<!-- DNN Architecture -->
+## DCGAN DNN Architecture
+- Two methods were followed as given below.
+- First one adopted on Pytorch tutorial https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html
+- Second one adopted based on https://github.com/Yangyangii/GAN-Tutorial/blob/master/CARS/DCGAN.ipynb
+- Architecture followed was same in both methods. Difference lies in creating labels while training.
+- Refer for receptive field & output size calculations used in architecture - both convolutions and transpose convolutions were used https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/RF%20Calculator_S6_Modelled%20From_Cars_Mine.xlsx
+- Network architecture for Generator is as follows:
+
+![Generator Architecture](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/Generator%20Network.jpg)
+
+- Network architecture for Discriminator is as follows:
+
+![Discriminator Architecture](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/Discriminator%20Network.jpg)
 
 <!-- Colab Notebook References -->
 ## Colab Notebook References
