@@ -32,8 +32,8 @@ ________
 
 * [Linux](https://www.tutorialspoint.com/ubuntu/index.htm)
 * [Python 3.8](https://www.python.org/downloads/) or Above
-* [Pytorch 1.5.1] 
-* [torchvision 0.6.1]
+* [Pytorch 1.5.1](https://pytorch.org/) ** Higher versions will cause storage issues while deploying to AWS Lambda 
+* [torchvision 0.6.1](https://pytorch.org/docs/stable/torchvision/index.html) ** Higher versions will cause storage issues while deploying to AWS Lambda
 * [AWS Account](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc)
 * [Serverless](https://www.serverless.com/) 
 * [Google Colab](https://colab.research.google.com/)
