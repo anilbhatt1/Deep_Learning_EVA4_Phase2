@@ -54,7 +54,7 @@ ________
 - Below is an example of DCGAN with MNIST
 
  ![DCGAN Example with MNIST](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/DCGAN%20Flow%20with%20MNIST.jpg)
-- This work is dealing with generation of Indian cars using DCGAN 
+- This work is dealing with generation of Indian cars using DCGAN (Depp Convolutional GANs)
 
 <!-- Data Preparation -->
 ## Data Preparation
@@ -86,15 +86,24 @@ ________
 
 <!-- Colab Notebook References -->
 ## Colab Notebook References
-- We are using Dlib and Open-CV 
-- 68 point landmark model from Dlib is used for shape prediction of face (Detecting landmarks)
-- dlib.get_frontal_face_detector() is used for face detection
-- From the shape detected, we will create a [convex hull](https://medium.com/@pascal.sommer.ch/a-gentle-introduction-to-the-convex-hull-problem-62dfcabee90c#:~:text=The%20convex%20hull%20of%20a,convex%20on%20the%20right%20side.)
-- From this convex hull we will create mask then find [Delaunay traingulation](https://en.wikipedia.org/wiki/Delaunay_triangulation#:~:text=In%20mathematics%20and%20computational%20geometry,triangle%20in%20DT(P).) for convex hull points
-- We will impose mask of first face over second face and perform [seamless clone](https://docs.opencv.org/master/df/da0/group__photo__clone.html)
-- https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S3_Facial%20Landmark%20Detection_Alignment_Swap/EVA4P2_S3_Facial_Swap_Modi_Imran_V1_ipynb.ipynb
+-	Colab notebook based on Pytorch tutorial approach. Trained for 2000 epochs. Loss function plotted for 500 to 2000 epochs.
+https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/EVA4P2_S6_GAN_V4_Wt_Initialize_Animation_Github.ipynb 
+-	Animation of images for 500 to 2000 epochs created based on above training can be referred below:
+https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/animation_2.mp4
+-	Yangyangii approach. Trained for 1400 epochs. Loss function also plotted. Colab notebook reference as below:
+https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/EVA4P2_S6_GAN_V4_with_weights_labels_using_torch_ones.ipynb
+-	Colab notebook reference for Yangyangii approach by loading pretrained model from step above. Trained further for 200 epochs & displayed images of cars generated.
+https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/EVA4P2_S6_GAN_V5_with_weights_labels_using_torch_ones_Images_Displayed.ipynb
+- Images generated based on  Yangyangii approach
 
-![Face Swap image](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S3_Facial%20Landmark%20Detection_Alignment_Swap/Images/Modi_Imran_Swapped.jpg)
+![Images Generated](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/Yangyangii%20Approach_Cars%20Generated.jpg)
+
+## Model Weight references for future training
+- Refer below locations to download pretrained weights for future.
+- Pytorch tutorial approach
+https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/tree/master/S6_GAN/Model%20Weights/Pytorch%20Tutorial%20Approach
+- Yangyangii approach
+https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/tree/master/S6_GAN/Model%20Weights/Yangyangii%20Cars%20Example%20Github
 
 <!-- LICENSE -->
 ## License
@@ -112,7 +121,6 @@ Distributed under the MIT License. See `LICENSE` for more information.
 ## Mentor
 
 * [Rohan Shravan](https://www.linkedin.com/in/rohanshravan/) , [The School of A.I.](https://theschoolof.ai/)
-
 
 <!-- MARKDOWN LINKS & IMAGES -->
 <!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
