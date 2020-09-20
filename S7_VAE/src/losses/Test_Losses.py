@@ -36,7 +36,7 @@ class Test_loss:
  
                     images            = images.to(device)                                    
                     reconstructed_img, mu, logvar  = model(images)                                              
-                    bce_loss          = criterion(reconstruct_img, images)
+                    bce_loss          = criterion(reconstructed_img, images)
                     test_loss        += final_loss(bce_loss, mu, logvar).item()                   
                     total            += images.size(0) 
                     

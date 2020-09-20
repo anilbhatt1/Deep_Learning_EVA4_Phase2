@@ -51,7 +51,7 @@ class Train_loss:
               images      = images.to(device)       # Moving images and correspondig labels to GPU
               optimizer.zero_grad()                 # Zeroing out gradients at start of each batch so that backpropagation won't take accumulated value
               reconstructed_img, mu, logvar = model(images)  # Calling CNN model to predict the images
-              bce_loss    = criterion(reconstruct_img, images)
+              bce_loss    = criterion(reconstructed_img, images)
               train_loss  = final_loss(bce_loss, mu, logvar)            
             
               # Backpropagation
