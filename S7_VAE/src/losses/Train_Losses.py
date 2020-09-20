@@ -16,7 +16,7 @@ class Train_loss:
           """
           y_hat = recontructed_img.view(32, 3, 128, 128).permute(0, 2, 3, 1)    #Modify axes to (32, 28, 28, 3) via permute. 32 -> batch_size
           result = (y_hat.detach().cpu().numpy()+1)/2.
-      return result
+          return result
 
       def final_loss(bce_loss, mu, logvar):
           """
