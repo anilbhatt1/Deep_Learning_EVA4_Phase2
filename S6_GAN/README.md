@@ -55,7 +55,7 @@ ________
 - Below is an example of DCGAN with MNIST
 
  ![DCGAN Example with MNIST](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/DCGAN%20Flow%20with%20MNIST.jpg)
-- This work is dealing with generation of Indian cars using DCGAN (Depp Convolutional GANs)
+- This work is dealing with generation of Indian cars using DCGAN (Deep Convolutional GANs)
 
 <!-- Data Preparation -->
 ## Data Preparation
