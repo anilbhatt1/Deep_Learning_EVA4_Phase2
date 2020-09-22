@@ -3,7 +3,7 @@ import torch.nn as nn
 import torch.nn.functional as F
 
 class VAE(nn.Module):
-    def __init__(self, in_channel=3, out_channel=3, latent_size=100):
+    def __init__(self, IMAGE_DIM, in_channel=3, out_channel=3, latent_size=100):
         super(VAE, self).__init__()
         assert IMAGE_DIM[0] % 2**4 == 0, 'Should be divided 16'
         self.init_dim = (IMAGE_DIM[0] // 2**4, IMAGE_DIM[1] // 2**4)  
