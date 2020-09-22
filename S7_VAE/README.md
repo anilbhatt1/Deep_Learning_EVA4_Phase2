@@ -54,9 +54,24 @@ ________
  ![Auto Encoder Architecture](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/AE_Architecture.jpg)
 
 - Usecases of auto-encoder includes denoising the image as shown in below image.
+
  ![Denoising](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/Denoising%20Input.jpg)
  
-- Whole idea of GAN is running around 2 deep neural networks - Generator (G) and Discriminator(D)
+- However, auto-encoders cant seamlessly interpolate between classes. This is because aut-encoders form cluster of classes which are discontinous as shown below. Latent space they convert their inputs to and where their encoded vectors lie, may not be continuous, or allow easy interpolation.
+ 
+ ![AE_Cluster](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/AE%20Cluster.jpg)
+ 
+- This is where VAEs come into picture.
+- Variational Autoencoders (VAEs) have one fundamentally unique property that separates them from vanilla autoencoders, and it is this property that makes them so useful for generative modeling: their latent spaces are, by design, continuous, allowing easy random sampling and interpolation.
+- It achieves this by doing something that seems rather surprising at first: making its encoder not output an encoding vector of size n, rather, outputting two vectors of size n: a vector of means, μ, and another vector of standard deviations, σ.
+- Instead of predicting a point as what vanilla autocoders do, VAE predicts a cloud of point as shown below. 
+
+![VAE_Prediction]https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/VAE%20Prediction.jpg
+
+- Network is also designed as the same.
+
+
+Whole idea of GAN is running around 2 deep neural networks - Generator (G) and Discriminator(D)
 - Given a random set of latent vectors, Generator(G) will generate images.
 - Discriminator (D) will identify whether this image is real or fake. 
 - D will be fed with both real and fake images. D loss function will backpropagate based on D's prediction (Real - 1, Fake - 0)
