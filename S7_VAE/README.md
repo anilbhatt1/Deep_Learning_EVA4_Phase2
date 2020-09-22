@@ -72,26 +72,23 @@ ________
 
 ![VAE_Cluster](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/VAE_Cluster.jpg)
 
-- Inorder to achieve this, along with predicting μ and σ, loss function also needs to be modified. If we merely use only reconstruction loss as in AEs, we will end-up a below, where each classes will end-up stacking over another. But our aim as stated above is to get a smooth continous latent space that doesn't overlap.
+- Inorder to achieve this, along with predicting μ and σ, loss function also needs to be modified. If we merely use only reconstruction loss as in AEs, we will end-up a below, where each classes will end-up stacking over another. 
 
 ![VAE_Cluster with reconstruct](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/VAE%20Cluster%20with%20reconstuct%20loss%20only.jpg)
 
-- Network is also designed as the same.
+-But our aim as stated above is to get a smooth continous latent space that doesn't overlap as shown below. Image on right side shows how MNIST results will look like with VAE with smooth interpolation between classes.
 
+![VAE_Expected_Result](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/vae-result.jpg)
 
-Whole idea of GAN is running around 2 deep neural networks - Generator (G) and Discriminator(D)
-- Given a random set of latent vectors, Generator(G) will generate images.
-- Discriminator (D) will identify whether this image is real or fake. 
-- D will be fed with both real and fake images. D loss function will backpropagate based on D's prediction (Real - 1, Fake - 0)
-- For each epoch, D will be trained first and G trained next.
-- For G also training is done via D. G will generate fake image again and D will predict (Real - 1, Fake - 0). Loss will backpropagate again but this time for G. 
-- Below image will help understand the flow Deep Convolutional GAN (DCGAN)
+- VAE achieves this by introducing one more loss called KULLBACK-LIEBLER DIVERGENCE (KLD loss). KLD loss is a measure to quantify how similar 2 distributions looks like. As aim of KLD loss is to minimize divergence, it will fight against stacking-up tendency we seen above while maintaining divergence between classes to a minimum.
 
- ![DCGAN Flow](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/DCGAN%20Flow%20diagram.jpg)
-- Below is an example of DCGAN with MNIST
+![KLD](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/KLD.jpg)
 
- ![DCGAN Example with MNIST](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/DCGAN%20Flow%20with%20MNIST.jpg)
-- This work is dealing with generation of Indian cars using DCGAN (Depp Convolutional GANs)
+- VAE Network will look as below.
+
+![VAE_ntwk](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/VAE_Network.jpg)
+
+- This work is dealing with generation of Indian cars using VAE.
 
 <!-- Data Preparation -->
 ## Data Preparation
@@ -107,19 +104,16 @@ Whole idea of GAN is running around 2 deep neural networks - Generator (G) and D
  ![Input Sample Images](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/Input%20Sample%20images.png)
 
 <!-- DNN Architecture -->
-## DCGAN DNN Architecture
+## VAE DNN Architecture
 - Two methods were followed as given below.
 - First one adopted on Pytorch tutorial https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html
 - Second one adopted based on https://github.com/Yangyangii/GAN-Tutorial/blob/master/CARS/DCGAN.ipynb
 - Architecture followed was same in both methods. Difference lies in creating labels while training.
 - Refer for receptive field & output size calculations used in architecture - both convolutions and transpose convolutions were used https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/RF%20Calculator_S6_Modelled%20From_Cars_Mine.xlsx
-- Network architecture for Generator is as follows:
-
-![Generator Architecture](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/Generator%20Network.jpg)
-
-- Network architecture for Discriminator is as follows:
-
-![Discriminator Architecture](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/Discriminator%20Network.jpg)
+- Network architecture for VAE (encoder & decoder were combined in single class) as follows:
+![VAE Architecture](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/Generator%20Network.jpg)
+- For code base of network, please refer below:
+https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/src/models/VAE_Model.py
 
 <!-- Colab Notebook References -->
 ## Colab Notebook References
