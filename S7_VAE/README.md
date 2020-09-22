@@ -66,7 +66,15 @@ ________
 - It achieves this by doing something that seems rather surprising at first: making its encoder not output an encoding vector of size n, rather, outputting two vectors of size n: a vector of means, μ, and another vector of standard deviations, σ.
 - Instead of predicting a point as what vanilla autocoders do, VAE predicts a cloud of point as shown below. 
 
-![VAE_Prediction]https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/VAE%20Prediction.jpg
+![VAE_Prediction](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/VAE%20Prediction.jpg)
+
+- Aim of VAE is to predict a smooth continous latent space that doesn't overlap with each other. 
+
+![VAE_Cluster](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/VAE_Cluster.jpg)
+
+- Inorder to achieve this, along with predicting μ and σ, loss function also needs to be modified. If we merely use only reconstruction loss as in AEs, we will end-up a below, where each classes will end-up stacking over another. But our aim as stated above is to get a smooth continous latent space that doesn't overlap.
+
+![VAE_Cluster with reconstruct](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/VAE%20Cluster%20with%20reconstuct%20loss%20only.jpg)
 
 - Network is also designed as the same.
 
