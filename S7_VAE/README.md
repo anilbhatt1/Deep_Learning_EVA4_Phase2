@@ -105,37 +105,28 @@ ________
 
 <!-- DNN Architecture -->
 ## VAE DNN Architecture
-- Two methods were followed as given below.
-- First one adopted on Pytorch tutorial https://pytorch.org/tutorials/beginner/dcgan_faces_tutorial.html
-- Second one adopted based on https://github.com/Yangyangii/GAN-Tutorial/blob/master/CARS/DCGAN.ipynb
-- Architecture followed was same in both methods. Difference lies in creating labels while training.
-- Refer for receptive field & output size calculations used in architecture - both convolutions and transpose convolutions were used https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/RF%20Calculator_S6_Modelled%20From_Cars_Mine.xlsx
 - Network architecture for VAE (encoder & decoder were combined in single class) as follows:
-![VAE Architecture](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/Generator%20Network.jpg)
+![VAE Architecture](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/VAE_DNN_Architecture.jpg)
 - For code base of network, please refer below:
 https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/src/models/VAE_Model.py
 
 <!-- Colab Notebook References -->
 ## Colab Notebook References
--	Colab notebook based on Pytorch tutorial approach. Trained for 2000 epochs. Loss function plotted for 500 to 2000 epochs.
-https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/EVA4P2_S6_GAN_V4_Wt_Initialize_Animation_Github.ipynb 
+-	Trained for 2000 epochs. Loss function plotted for 500 to 2000 epochs. KLD loss was normalized by (batch_size * channels * img width * img height) to keep it comparable with MSE loss (reconstruction loss). Output images were bad before KLD normalization.
+- Latent vector after encoder was not passed via activation function. Instead latent vector was directly passed to reparametrization function to derive sample.
+- Colab notebook reference used for training is as below.
+https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/EVA4P2_S7_VAE_V5_KLD_batch_imgsize_no_Sigmoid_for_encoder_module.ipynb 
+- Training loss code base can be referenced below
+https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/tree/master/S7_VAE/src/losses
 -	Animation of images for 500 to 2000 epochs created based on above training can be referred below:
-https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/animation_2.mp4
--	Yangyangii approach. Trained for 1400 epochs. Loss function also plotted. Colab notebook reference as below:
-https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/EVA4P2_S6_GAN_V4_with_weights_labels_using_torch_ones.ipynb
--	Colab notebook reference for Yangyangii approach by loading pretrained model from step above. Trained further for 200 epochs & displayed images of cars generated.
-https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/EVA4P2_S6_GAN_V5_with_weights_labels_using_torch_ones_Images_Displayed.ipynb
-- Images generated based on  Yangyangii approach
-
-![Images Generated](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/Yangyangii%20Approach_Cars%20Generated.jpg)
+https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/animation_vae_v1.mp4
+- Images generated via VAE vs Original Image
+![Images Generated](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/Generated%20vs%20Original.jpg)
 
 <!-- Model weight References -->
 ## Model Weight references for future training
-- Refer below locations to download pretrained weights for future.
-- Pytorch tutorial approach
-https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/tree/master/S6_GAN/Model%20Weights/Pytorch%20Tutorial%20Approach
-- Yangyangii approach
-https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/tree/master/S6_GAN/Model%20Weights/Yangyangii%20Cars%20Example%20Github
+- Refer below locations to download pretrained weights for future. Both CPU (jit traced for AWS lambda deployments) and GPU versions(for colab training) are available.
+https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/tree/master/S7_VAE/Model%20Weights
 
 <!-- LICENSE -->
 ## License
