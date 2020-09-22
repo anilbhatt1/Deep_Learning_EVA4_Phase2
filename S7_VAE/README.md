@@ -19,9 +19,9 @@ ________
 ## Table of Contents
 
 * [Prerequisites](#prerequisites)
-* [GAN Working](#gan-working)
+* [VAE Working](#gan-working)
 * [Data Preparation](#Data-Preparation)
-* [DCGAN DNN Architecture](#DNN-Architecture)
+* [VAE DNN Architecture](#DNN-Architecture)
 * [Colab Notebook References](#Colab-Notebook-References)
 * [Model Weight references for future training](#model-weights)
 * [License](#license)
@@ -41,8 +41,21 @@ ________
 * [Html](https://www.w3schools.com/html/)
 * [Jquery](https://jquery.com/)
 
-<!-- GAN Working -->
-## GAN Working
+<!-- VAE Working -->
+## VAE Working
+- Variational Auto-encoders(VAE) are special species of Auto-encoders.
+- Hence, let us first understand what Auto-encoders are and how they work. AE typically will have an encoder and a decoder network.
+- Encoder network will create latent vector/bottleneck from given input image.
+- Decoder network will take the bottleneck and recontruct the image.
+- Architecture will look as below. Reconstructed image will be compared against original image via a reconstruction loss as illustrated below. Loss used will be a regression loss like L1Loss, BCE or MSE loss.
+
+ ![AE Working](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/AUTOENCODERS.jpg)
+ 
+ ![Auto Encoder Architecture](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/AE_Architecture.jpg)
+
+- Usecases of auto-encoder includes denoising the image as shown in below image.
+ ![Denoising](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/Denoising%20Input.jpg)
+ 
 - Whole idea of GAN is running around 2 deep neural networks - Generator (G) and Discriminator(D)
 - Given a random set of latent vectors, Generator(G) will generate images.
 - Discriminator (D) will identify whether this image is real or fake. 
