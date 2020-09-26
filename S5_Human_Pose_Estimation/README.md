@@ -44,6 +44,10 @@ ________
 <!-- HPE Working -->
 ## HPE Working
 - Human pose estimation (HPE) is the process of estimating the configuration of the body (pose) from a single, typically monocular, image. 
+- It can be applied to many applications such as action/activity recognition, action detection, human tracking, in movies and animation, virtual reality, human-computer interaction, video surveillance, medical assistance, self-driving, sports motion analysis, etc.
+- There are various methods through which HPE is done as shown below.
+
+![HPE Catgories](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S5_Human_Pose_Estimation/Readme_Contents/HPE%20Method%20Categories.png)
 - Hence, let us first understand what Auto-encoders are and how they work. AE typically will have an encoder and a decoder network.
 - Encoder network will create latent vector/bottleneck from given input image.
 - Decoder network will take the bottleneck and recontruct the image.
