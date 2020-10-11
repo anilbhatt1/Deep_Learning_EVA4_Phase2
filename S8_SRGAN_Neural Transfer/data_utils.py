@@ -5,10 +5,8 @@ from PIL import Image
 from torch.utils.data.dataset import Dataset
 from torchvision.transforms import Compose, RandomCrop, ToTensor, ToPILImage, CenterCrop, Resize
 
-
 def is_image_file(filename):
     return any(filename.endswith(extension) for extension in ['.png', '.jpg', '.jpeg', '.PNG', '.JPG', '.JPEG'])
-
 
 def calculate_valid_crop_size(crop_size, upscale_factor):
     return crop_size - (crop_size % upscale_factor)
@@ -20,14 +18,12 @@ def train_hr_transform(crop_size):
         ToTensor(),
     ])
 
-
 def train_lr_transform(crop_size, upscale_factor):
     return Compose([
         ToPILImage(),
         Resize(crop_size // upscale_factor, interpolation=Image.BICUBIC),
         ToTensor()
     ])
-
 
 def display_transform():
     return Compose([
@@ -37,12 +33,20 @@ def display_transform():
         ToTensor()
     ])
 
+# Images are read from directory.    
+# 44, 4 -> parameters passed to 'calculate_crop_size' function. Both parameters are configured.
+# Example : Image Input Size -> (127, 224)
+# crop_size = (44 - 44%4) = 44
+# hr_image.size -> (44,44) ->  i.e. crop size we calculated. We are cropping the hr_image based on crop size from input image.
+# lr_image.size -> 44 // 4 = 11 -> (11,11)
+# Note : Train data prep is different from validation data prep. In train data, hr_img is significantly down-sized. This is to reduce the training time.
 
 class TrainDatasetFromFolder(Dataset):
     def __init__(self, dataset_dir, crop_size, upscale_factor):
         super(TrainDatasetFromFolder, self).__init__()
         self.image_filenames = [join(dataset_dir, x) for x in listdir(dataset_dir) if is_image_file(x)]
         crop_size = calculate_valid_crop_size(crop_size, upscale_factor)
+        self.plain_transform = plain_transform()
         self.hr_transform = train_hr_transform(crop_size)
         self.lr_transform = train_lr_transform(crop_size, upscale_factor)
 
@@ -54,12 +58,31 @@ class TrainDatasetFromFolder(Dataset):
     def __len__(self):
         return len(self.image_filenames)
 
-
 class ValDatasetFromFolder(Dataset):
     def __init__(self, dataset_dir, upscale_factor):
         super(ValDatasetFromFolder, self).__init__()
         self.upscale_factor = upscale_factor
         self.image_filenames = [join(dataset_dir, x) for x in listdir(dataset_dir) if is_image_file(x)]
+
+# hr_image -> Original image we are giving from validation dataset. We calculate crop size & then again modify same 'hr_image' by CenterCrop from hr_image we started with.
+# lr_image -> This is reduced version of original image supplied. Dimension will be crop size//upscale factor
+# hr_restore_img -> This is merely resizing the lr_image to make it same size as hr_image. This will be the lr image considered for loss calculations
+
+# Example 1
+#   Orig Image size -> (224, 150)
+#   150, 4 -> parameters passed to 'calculate_crop_size' function i.e. minimum of original image dimension & upscale factor that we set (in this case 4)
+#   crop_size = (150 - 150%4) = 148
+#   lr_scale -> 148/4 = 37 i.e. lr_image size will (37, 37)
+#   hr_scale -> 148, so hr_image size will be (148,148) i.e. crop size we calculated
+#   hr_restore_img_size = (148, 148) because this is mere resizing of lr_image
+
+# Example 2 
+#   Orig Image size -> (224, 224)
+#   224, 4 -> parameters passed to 'calculate_crop_size' function  i.e. minimum of original image dimension & upscale factor that we set (in this case 4)
+#   crop_size = (224 - 224%4) = 224
+#   lr_scale -> 224/4 = 56 i.e. lr_image size will (56, 56)
+#   hr_scale -> 224, so hr_image size will be (224,224) i.e. crop size we calculated
+#   hr_restore_img_size = (224, 224) because this is mere resizing of lr_image
 
     def __getitem__(self, index):
         hr_image = Image.open(self.image_filenames[index])
@@ -74,25 +97,3 @@ class ValDatasetFromFolder(Dataset):
 
     def __len__(self):
         return len(self.image_filenames)
-
-
-class TestDatasetFromFolder(Dataset):
-    def __init__(self, dataset_dir, upscale_factor):
-        super(TestDatasetFromFolder, self).__init__()
-        self.lr_path = dataset_dir + '/SRF_' + str(upscale_factor) + '/data/'
-        self.hr_path = dataset_dir + '/SRF_' + str(upscale_factor) + '/target/'
-        self.upscale_factor = upscale_factor
-        self.lr_filenames = [join(self.lr_path, x) for x in listdir(self.lr_path) if is_image_file(x)]
-        self.hr_filenames = [join(self.hr_path, x) for x in listdir(self.hr_path) if is_image_file(x)]
-
-    def __getitem__(self, index):
-        image_name = self.lr_filenames[index].split('/')[-1]
-        lr_image = Image.open(self.lr_filenames[index])
-        w, h = lr_image.size
-        hr_image = Image.open(self.hr_filenames[index])
-        hr_scale = Resize((self.upscale_factor * h, self.upscale_factor * w), interpolation=Image.BICUBIC)
-        hr_restore_img = hr_scale(lr_image)
-        return image_name, ToTensor()(lr_image), ToTensor()(hr_restore_img), ToTensor()(hr_image)
-
-    def __len__(self):
-        return len(self.lr_filenames)
