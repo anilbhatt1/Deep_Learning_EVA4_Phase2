@@ -42,52 +42,24 @@ ________
 
 <!-- tokenization -->
 ## Tokenization - How to feed text data to neural networks
-- Variational Auto-encoders(VAE) are special species of Auto-encoders.
-- Hence, let us first understand what Auto-encoders are and how they work. AE typically will have an encoder and a decoder network.
-- Encoder network will create latent vector/bottleneck from given input image.
-- Decoder network will take the bottleneck and recontruct the image.
-- Architecture will look as below. Reconstructed image will be compared against original image via a reconstruction loss as illustrated below. Loss used will be a regression loss like L1Loss, BCE or MSE loss.
-
- ![AE Working](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/AUTOENCODERS.jpg)
- 
- ![Auto Encoder Architecture](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/AE_Architecture.jpg)
-
-- Usecases of auto-encoder includes denoising the image as shown in below image.
-
- ![Denoising](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/Denoising%20Input.jpg)
- 
-- However, auto-encoders cant seamlessly interpolate between classes. This is because aut-encoders form cluster of classes which are discontinous as shown below. Latent space they convert their inputs to and where their encoded vectors lie, may not be continuous, or allow easy interpolation.
- 
- ![AE_Cluster](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/AE%20Cluster.jpg)
- 
-- This is where VAEs come into picture.
-- Variational Autoencoders (VAEs) have one fundamentally unique property that separates them from vanilla autoencoders, and it is this property that makes them so useful for generative modeling: their latent spaces are, by design, continuous, allowing easy random sampling and interpolation.
-- It achieves this by doing something that seems rather surprising at first: making its encoder not output an encoding vector of size n, rather, outputting two vectors of size n: a vector of means, μ, and another vector of standard deviations, σ.
-- Instead of predicting a point as what vanilla autocoders do, VAE predicts a cloud of point as shown below. 
-
-![VAE_Prediction](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/VAE%20Prediction.jpg)
-
-- Aim of VAE is to predict a smooth continous latent space that doesn't overlap with each other. 
-
-![VAE_Cluster](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/VAE_Cluster.jpg)
-
-- Inorder to achieve this, along with predicting μ and σ, loss function also needs to be modified. If we merely use only reconstruction loss as in AEs, we will end-up a below, where each classes will end-up stacking over another. 
-
-![VAE_Cluster with reconstruct](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/VAE%20Cluster%20with%20reconstuct%20loss%20only.jpg)
-
--But our aim as stated above is to get a smooth continous latent space that doesn't overlap as shown below. Image on right side shows how MNIST results will look like with VAE with smooth interpolation between classes.
-
-![VAE_Expected_Result](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/vae-result.jpg)
-
-- VAE achieves this by introducing one more loss called KULLBACK-LIEBLER DIVERGENCE (KLD loss). KLD loss is a measure to quantify how similar 2 distributions looks like. As aim of KLD loss is to minimize divergence, it will fight against stacking-up tendency we seen above while maintaining divergence between classes to a minimum.
-
-![KLD](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/KLD.jpg)
-
-- VAE Network will look as below.
-
-![VAE_ntwk](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/VAE_Network.jpg)
-
-- This work is dealing with generation of Indian cars using VAE.
+- Neural networks only understand numbers. Hence like images, text also needs to be converted to numbers to feed to neural networks.
+- We can call this vectorization i.e. converting text into vectors. 
+- There are mainly 2 parts involved in vectorization of text - tokenization and numericalization.
+- Tokenization means creating tokens out of a given sentence. Example as below:
+  "This is Anil Bhatt !" --> ["This", "is", "Anil", "Bhatt", "!"]
+- Numericalization means assigning an index for these numbers based on their position in vocabulary. Example as below:
+  ["This", "is", "Anil", "Bhatt", "!"] --> [9876, 5346, 567, 1320, 43]
+- From where will we get vocabulary ? Building such a vocabulary will be cumbersome. Hence, We usually use standard word vectors like Glove for this purpose.
+  Example : "glove.6b.100d" --> Means Glove trained on 6 Billion words and having 100 dimensions.
+- Tokenization is also not straight forward process if we choose to build it. Example : "Stock value crashed by $100B for Apple over nite :( ...(sic)" . We 
+  can see that there are several words like 100(can be any number), B(here it denotes Billion but can mean different things based on context), sic (means  
+  quoted verbatim, hence cannot put under unknown word category), :( (sad smiley, not some random characters).
+- Tokenization of above sentence will not be easy. Hence, for tokenization also, we will use standard tokenizers like Spacy.  
+- These tokenized inputs are passed to an embedding layer which will give a vector representation of the tokenized word based on its value in embedding   
+  layer. Imagine embedding layer as a look-up table. 
+  Text Input to embedding layer shape = [batch size, sentence len], Output from embedding layer shape = [batch size, sentence len, embedding dimension]
+- This embedding layer output will then be fed to subsequent DNN layers to predict an output. Output could be next word in sequence, sentiment (+ve or -ve as 
+  in IMDB movie review dataset), type of question (HUM, ETY, DESC etc as in TREC dataset) etc.
 
 <!-- neuralembeddings -->
 ## Why neural embeddings are preferred
