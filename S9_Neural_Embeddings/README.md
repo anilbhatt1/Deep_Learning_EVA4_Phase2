@@ -89,16 +89,12 @@ ________
 
 <!-- Colab Notebook References -->
 ## Colab Notebook References
--	Trained for 2000 epochs. Loss function plotted for 500 to 2000 epochs. KLD loss was normalized by (batch_size * channels * img width * img height) to keep it comparable with MSE loss (reconstruction loss). Output images were bad before KLD normalization.
-- Latent vector after encoder was not passed via activation function. Instead latent vector was directly passed to reparametrization function to derive sample.
-- Colab notebook reference used for training is as below.
-https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/EVA4P2_S7_VAE_V5_KLD_batch_imgsize_no_Sigmoid_for_encoder_module.ipynb 
-- Training loss code base can be referenced below
-https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/tree/master/S7_VAE/src/losses
--	Animation of images for 500 to 2000 epochs created based on above training can be referred below:
-https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/animation_vae_v1.mp4
-- Images generated via VAE vs Original Image
-![Images Generated](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/Generated%20vs%20Original.jpg)
+- Below ipynb notebooks will help us to get a better understanding on NLP models. Details are as below.
+https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Simple_Sentiment_Analysis.ipynb
+- Task : Predict sentiment (+ve 1 or -ve 0) from IMDB movie reviews
+- We define a simple embedding layer here. Architecture is embedding -> RNN -> fc -> Prediction
+- As it is a binary classification problem, we are using nn.BCEWithLogitsLoss() as loss function
+- Model randomly predicts sentiments indicating that it is not a useful model
 
 <!-- Model weight References -->
 ## Model Weight references for future training
