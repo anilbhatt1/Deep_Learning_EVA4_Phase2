@@ -52,8 +52,8 @@ ________
 - From where will we get vocabulary ? Building such a vocabulary will be cumbersome. Hence, We usually use standard word vectors like Glove for this purpose.
   Example : "glove.6b.100d" --> Means Glove trained on 6 Billion words and having 100 dimensions.
 - Tokenization is also not straight forward process if we choose to build it. Example : "Stock value crashed by $100B for Apple over nite :( ...(sic)" . We 
-  can see that there are several words like 100(can be any number), B(here it denotes Billion but can mean different things based on context), sic (means  
-  quoted verbatim, hence cannot put under unknown word category), :( (sad smiley, not some random characters).
+ can see that there are several words like 100(can be any number), B(here it denotes Billion but can mean different things based on context), sic(means  
+ quoted verbatim, hence cannot put under unknown word category), :( (sad smiley, not some random characters).
 - Tokenization of above sentence will not be easy. Hence, for tokenization also, we will use standard tokenizers like Spacy.  
 - These tokenized inputs are passed to an embedding layer which will give a vector representation of the tokenized word based on its value in embedding   
   layer. Imagine embedding layer as a look-up table. 
