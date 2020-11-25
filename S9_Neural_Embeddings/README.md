@@ -74,16 +74,18 @@ ________
   a 100 element vector with index corresponding to "Therefore" only having a value of 1 and rest 99 indexes as zeroes.
 - As we can clearly see, this is wasteful. Thus came the idea of neural word embeddings.
 - Unlike the word vectors obtained via one-hot encoding, word embeddings are learned from data.
-- Below image clearly depicts difference between these tow
+- Below image clearly depicts difference between these two.
 
 ![One_hot vs Word_Embedding](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/One_hot%20vs%20Word%20Embedding.jpg)
 
 <!-- word2vec -->
 ## Word2Vec - CBOW and Skipgram
-- Network architecture for VAE (encoder & decoder were combined in single class) as follows:
-![VAE Architecture](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/VAE_DNN_Architecture.jpg)
-- For code base of network, please refer below:
-https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/src/models/VAE_Model.py
+- Word2Vec is a shallow, two-layer neural network which is trained to reconstruct linguistic contexts of words.
+- It comes in two flavors, the Continuous Bag-of-Words (CBOW) model and the Skip-Gram model.
+- Algorithmically both are similar as shown below:
+![Algorith View](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/CBOW_SkipGram.png)
+- Example of CBOW vs Skip-Gram is as below:
+![Example](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/CBOW_Example.png)
 
 <!-- Colab Notebook References -->
 ## Colab Notebook References
