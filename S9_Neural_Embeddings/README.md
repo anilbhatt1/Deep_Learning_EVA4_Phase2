@@ -100,23 +100,24 @@ ________
 - Here we are improving upon previous version
 - Task : Predict sentiment (+ve 1 or -ve 0) from IMDB movie reviews
 - Tokenizer : Spacy with pre-padded sequencing, uses LSTM instead of RNN, also uses bidirectional & multi-layer concepts of RNNs in model.
-- Built vocabulary from glove.6B.100D and glove embedding is used.
+- Built vocabulary from glove.6B.100D and pre-trained glove embedding is used.
 - As it is a binary classification problem, we are using nn.BCEWithLogitsLoss() as loss function
 - Model performance improves significantly with Val. Acc: 89.62%
 ### https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Faster_Sentiment_Analysis_using_FastText.ipynb
 - Task : Predict sentiment (+ve 1 or -ve 0) from IMDB movie reviews
 - Tokenizer : Spacy. FastText model used which employs n-grams. Here we used bigrams. As RNNs are not involved, not using pre-padded sequences.
-- Built vocabulary from glove.6B.100D and glove embedding is used.
+- Built vocabulary from glove.6B.100D and pre-trained glove embedding is used.
 - FastText architecture is embedding -> Average Pooling -> FC -> Prediction
 - As it is a binary classification problem, we are using nn.BCEWithLogitsLoss() as loss function
 - Model performance further improves with Val. Acc: 90.74%
 ### https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Convolutional_Sentiment_Analysis.ipynb
 - Task : Predict sentiment (+ve 1 or -ve 0) from IMDB movie reviews
-- Tokenizer : Spacy. FastText model used with bigrams. As RNNs are not involved, not using pre-padded sequences.
-- Built vocabulary from glove.6B.100D and glove embedding is used.
-- Architecture is embedding -> FastText -> FC -> Prediction
+- Tokenizer : Spacy. Built vocabulary from glove.6B.100D and pre-trained glove embedding is used.
+- CNN model is used. We decide n-grams using different filter sizes. Eg: filter_size = 3, tri-grams used
+- Architecture is as depicted below.
+![CNN](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/CNN.jpg)
 - As it is a binary classification problem, we are using nn.BCEWithLogitsLoss() as loss function
-- Model performance further improves with Val. Acc: 90.74%
+- Model performance slightly drops with Val. Acc: 88.09% but processing becomes much faster
 
 <!-- Model weight References -->
 ## Model Weight references for future training
