@@ -60,6 +60,11 @@ ________
   Text Input to embedding layer shape = [batch size, sentence len], Output from embedding layer shape = [batch size, sentence len, embedding dimension]
 - This embedding layer output will then be fed to subsequent DNN layers to predict an output. Output could be next word in sequence, sentiment (+ve or -ve as 
   in IMDB movie review dataset), type of question (HUM, ETY, DESC etc as in TREC dataset) etc.
+- Tokenization we referred above is word-by-word tokenization which is the most popular one. We can also use characted-by-characted tokenization. Another 
+  method is n-grams. An example of bigram is as follows: "My name is Anil !" --> bigram will be "My name", "name is", "is Anil", "Anil !"
+- However, use of convolutions eliminates need for using n-grams. Please refer below code bases to understand how convolutions eliminate need for n-grams.
+  https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Faster_Sentiment_Analysis_using_FastText.ipynb
+  https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Convolutional_Sentiment_Analysis.ipynb
 
 <!-- neuralembeddings -->
 ## Why neural embeddings are preferred
