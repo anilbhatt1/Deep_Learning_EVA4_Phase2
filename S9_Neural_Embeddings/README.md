@@ -95,21 +95,21 @@ ________
 - Tokenizer : Spacy. Also, we are building vocabulary ourselves.
 - We define a simple embedding layer here. Architecture is embedding -> RNN -> fc -> Prediction
 - As it is a binary classification problem, we are using nn.BCEWithLogitsLoss() as loss function
-- Model randomly predicts sentiments randomly (Val. Acc: 51.03%) indicating that it is not a useful model
+- Model randomly predicts sentiments randomly (Val. Acc: 51.03%) indicating that it is not a useful model. Trained for 20 epochs.
 ### https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Updated_Sentiment_Analysis.ipynb
 - Here we are improving upon previous version
 - Task : Predict sentiment (+ve 1 or -ve 0) from IMDB movie reviews
 - Tokenizer : Spacy with pre-padded sequencing, uses LSTM instead of RNN, also uses bidirectional & multi-layer concepts of RNNs in model.
 - Built vocabulary from glove.6B.100D and pre-trained glove embedding is used.
 - As it is a binary classification problem, we are using nn.BCEWithLogitsLoss() as loss function
-- Model performance improves significantly with Val. Acc: 89.62%
+- Model performance improves significantly with Val. Acc: 89.62%. Trained for 20 epochs.
 ### https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Faster_Sentiment_Analysis_using_FastText.ipynb
 - Task : Predict sentiment (+ve 1 or -ve 0) from IMDB movie reviews
 - Tokenizer : Spacy. FastText model used which employs n-grams. Here we used bigrams. As RNNs are not involved, not using pre-padded sequences.
 - Built vocabulary from glove.6B.100D and pre-trained glove embedding is used.
 - FastText architecture is embedding -> Average Pooling -> FC -> Prediction
 - As it is a binary classification problem, we are using nn.BCEWithLogitsLoss() as loss function
-- Model performance further improves with Val. Acc: 90.74%
+- Model performance further improves with Val. Acc: 90.74%. Trained for 20 epochs.
 ### https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Convolutional_Sentiment_Analysis.ipynb
 - Task : Predict sentiment (+ve 1 or -ve 0) from IMDB movie reviews
 - Tokenizer : Spacy. Built vocabulary from glove.6B.100D and pre-trained glove embedding is used.
@@ -117,7 +117,14 @@ ________
 - Architecture is as depicted below.
 ![CNN](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/CNN.jpg)
 - As it is a binary classification problem, we are using nn.BCEWithLogitsLoss() as loss function
-- Model performance slightly drops with Val. Acc: 88.09% but processing becomes much faster
+- Model performance slightly drops with Val. Acc: 88.09% but processing becomes much faster. Trained for 20 epochs.
+### https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Multi_Class_Question_Type_Analysis.ipynb
+- Task : TREC dataset used here. This is a dataset of questions and task is to classify what category question belongs to. eg: HUM for questions about humans
+- Total 6 category of questions are present, hence number of classes = 6
+- Tokenizer : Spacy. Built vocabulary from glove.6B.100D and pre-trained glove embedding is used.
+- Same CNN model as earlier is used. 
+- As it is a multi classification problem, we are using nn.CrossEntropyLoss() as loss function
+- Model performance is good with Val. Acc: 83.97% when trained for 20 epochs
 
 <!-- Model weight References -->
 ## Model Weight references for future training
