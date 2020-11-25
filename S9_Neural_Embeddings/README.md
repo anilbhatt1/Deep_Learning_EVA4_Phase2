@@ -83,13 +83,14 @@ ________
 - Word2Vec is a shallow, two-layer neural network which is trained to reconstruct linguistic contexts of words.
 - It comes in two flavors, the Continuous Bag-of-Words (CBOW) model and the Skip-Gram model.
 - Algorithmically both are similar as shown below:
-![Algorith View](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/CBOW_SkipGram.png)
+![Algorithm View](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/CBOW_SkipGram.png)
 - Example of CBOW vs Skip-Gram is as below:
 ![Example](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/CBOW_Example.png)
 
 <!-- Colab Notebook References -->
 ## Colab Notebook References
 - Below ipynb notebooks will help us to get a better understanding on NLP models. Details are as below.
+- Original source of these notebooks https://github.com/bentrevett/pytorch-sentiment-analysis
 ### https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Simple_Sentiment_Analysis.ipynb
 - Task : Predict sentiment (+ve 1 or -ve 0) from IMDB movie reviews
 - Tokenizer : Spacy. Also, we are building vocabulary ourselves.
@@ -135,8 +136,8 @@ ________
 
 <!-- Model weight References -->
 ## Model Weight references for future training
-- Refer below locations to download pretrained weights for future. Both CPU (jit traced for AWS lambda deployments) and GPU versions(for colab training) are available.
-https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/tree/master/S7_VAE/Model%20Weights
+- Refer below locations to download pretrained weights for future. Only GPU versions(for colab training) are available.
+https://drive.google.com/drive/folders/1Vmb34RHxjtKf19HmfMfwO3sjri_XwY4u?usp=sharings
 
 <!-- LICENSE -->
 ## License
