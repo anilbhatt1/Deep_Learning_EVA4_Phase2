@@ -92,10 +92,24 @@ ________
 - Below ipynb notebooks will help us to get a better understanding on NLP models. Details are as below.
 ### https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Simple_Sentiment_Analysis.ipynb
 - Task : Predict sentiment (+ve 1 or -ve 0) from IMDB movie reviews
+- Tokenizer : Spacy. Also, we are building vocabulary ourselves.
 - We define a simple embedding layer here. Architecture is embedding -> RNN -> fc -> Prediction
 - As it is a binary classification problem, we are using nn.BCEWithLogitsLoss() as loss function
-- Model randomly predicts sentiments indicating that it is not a useful model
-
+- Model randomly predicts sentiments randomly (Val. Acc: 51.03%) indicating that it is not a useful model
+### https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Updated_Sentiment_Analysis.ipynb
+- Here we are improving upon previous version
+- Task : Predict sentiment (+ve 1 or -ve 0) from IMDB movie reviews
+- Tokenizer : Spacy with pre-padded sequencing, uses LSTM instead of RNN, also uses bidirectional & multi-layer concepts of RNNs in model.
+- Built vocabulary from glove.6B.100D and glove embedding is used.
+- As it is a binary classification problem, we are using nn.BCEWithLogitsLoss() as loss function
+- Model performance improves significantly with Val. Acc: 89.62%
+### https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Faster_Sentiment_Analysis_using_FastText.ipynb
+- Task : Predict sentiment (+ve 1 or -ve 0) from IMDB movie reviews
+- Tokenizer : Spacy. FastText model used with bigrams. As RNNs are not involved, not using pre-padded sequences.
+- Built vocabulary from glove.6B.100D and glove embedding is used.
+- Architecture is embedding -> FastText -> FC -> Prediction
+- As it is a binary classification problem, we are using nn.BCEWithLogitsLoss() as loss function
+- Model performance further improves with Val. Acc: 90.74%
 <!-- Model weight References -->
 ## Model Weight references for future training
 - Refer below locations to download pretrained weights for future. Both CPU (jit traced for AWS lambda deployments) and GPU versions(for colab training) are available.
