@@ -90,7 +90,7 @@ ________
 <!-- Colab Notebook References -->
 ## Colab Notebook References
 - Below ipynb notebooks will help us to get a better understanding on NLP models. Details are as below.
-https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Simple_Sentiment_Analysis.ipynb
+### https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Simple_Sentiment_Analysis.ipynb
 - Task : Predict sentiment (+ve 1 or -ve 0) from IMDB movie reviews
 - We define a simple embedding layer here. Architecture is embedding -> RNN -> fc -> Prediction
 - As it is a binary classification problem, we are using nn.BCEWithLogitsLoss() as loss function
