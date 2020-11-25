@@ -74,14 +74,9 @@ ________
   a 100 element vector with index corresponding to "Therefore" only having a value of 1 and rest 99 indexes as zeroes.
 - As we can clearly see, this is wasteful. Thus came the idea of neural word embeddings.
 - Unlike the word vectors obtained via one-hot encoding, word embeddings are learned from data.
-- This selection was done to make the network train with limited resource available via google colab.
-- File creation colab link is as below
- https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/EVA4_P2_S6_File_Creation.ipynb
-- Enitre input dataset that was used for zip file creation can be found in below drive location
- https://drive.google.com/drive/folders/1SMv5kS5ZrMBbwTO35272Xyw3oB8oCMlE?usp=sharing
-- Input image samples
+- Below image clearly depicts difference between these tow
 
- ![Input Sample Images](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/Input%20Sample%20images.png)
+![One_hot vs Word_Embedding](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/One_hot%20vs%20Word%20Embedding.jpg)
 
 <!-- word2vec -->
 ## Word2Vec - CBOW and Skipgram
