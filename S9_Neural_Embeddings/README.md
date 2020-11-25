@@ -68,8 +68,12 @@ ________
 
 <!-- neuralembeddings -->
 ## Why neural embeddings are preferred
-- 505 images of Indian cars were selected from web.
-- All cars selected were front facing as shown below with most of the images with white or no background.
+- There are multiple ways to associate a vector with word - one is one-hot encoding, another is word embeddings.
+- Problem with one-hot encoding that it will return a sparse high-dimensional vector which is expensive. Example : Let us say our vocabulary has 100 words 
+  and "Therefore" is one among these words. Let us say a sentence having "Therefore" comes up for vectorization. In this case, token for "Therefore" will be 
+  a 100 element vector with index corresponding to "Therefore" only having a value of 1 and rest 99 indexes as zeroes.
+- As we can clearly see, this is wasteful. Thus came the idea of neural word embeddings.
+- Unlike the word vectors obtained via one-hot encoding, word embeddings are learned from data.
 - This selection was done to make the network train with limited resource available via google colab.
 - File creation colab link is as below
  https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/EVA4_P2_S6_File_Creation.ipynb
