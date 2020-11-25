@@ -19,9 +19,9 @@ ________
 ## Table of Contents
 
 * [Prerequisites](#prerequisites)
-* [VAE Working](#gan-working)
-* [Data Preparation](#Data-Preparation)
-* [VAE DNN Architecture](#DNN-Architecture)
+* [Tokenization - How to feed text data to neural networks](#tokenization)
+* [Why neural embeddings are preferred](#neuralembeddings)
+* [Word2Vec - CBOW and Skipgram](#word2vec)
 * [Colab Notebook References](#Colab-Notebook-References)
 * [Model Weight references for future training](#model-weights)
 * [License](#license)
@@ -40,8 +40,8 @@ ________
 * [Html](https://www.w3schools.com/html/)
 * [Jquery](https://jquery.com/)
 
-<!-- VAE Working -->
-## VAE Working
+<!-- tokenization -->
+## Tokenization - How to feed text data to neural networks
 - Variational Auto-encoders(VAE) are special species of Auto-encoders.
 - Hence, let us first understand what Auto-encoders are and how they work. AE typically will have an encoder and a decoder network.
 - Encoder network will create latent vector/bottleneck from given input image.
@@ -89,8 +89,8 @@ ________
 
 - This work is dealing with generation of Indian cars using VAE.
 
-<!-- Data Preparation -->
-## Data Preparation
+<!-- neuralembeddings -->
+## Why neural embeddings are preferred
 - 505 images of Indian cars were selected from web.
 - All cars selected were front facing as shown below with most of the images with white or no background.
 - This selection was done to make the network train with limited resource available via google colab.
@@ -102,8 +102,8 @@ ________
 
  ![Input Sample Images](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/Input%20Sample%20images.png)
 
-<!-- DNN Architecture -->
-## VAE DNN Architecture
+<!-- word2vec -->
+## Word2Vec - CBOW and Skipgram
 - Network architecture for VAE (encoder & decoder were combined in single class) as follows:
 ![VAE Architecture](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/VAE_DNN_Architecture.jpg)
 - For code base of network, please refer below:
