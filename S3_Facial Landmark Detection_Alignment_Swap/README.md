@@ -13,7 +13,7 @@
 # Deployment of Resnet, Mobilenet-v2 and Face-Alignment to AWS 
 ________
 
-# [Link to Web page for Restful API call](http://webdocsridevi.s3-website.ap-south-1.amazonaws.com/)
+# [Link to Web page(Face Swap and Face Align)](https://neural-eyes.herokuapp.com/)
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
