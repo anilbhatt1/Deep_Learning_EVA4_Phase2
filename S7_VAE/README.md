@@ -13,7 +13,7 @@
 # Variational Auto Encoders (VAEs)
 ________
 
-# [Link to Web page for Restful API call](To be updated)
+# [Link to Web page for VAE-Car Image Reconstruction](https://neural-eyes.herokuapp.com/)
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
