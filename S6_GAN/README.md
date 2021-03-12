@@ -13,7 +13,7 @@
 # Generative Adversarial Networks (GANs)
 ________
 
-# [Link to Web page for Restful API call](To be updated)
+# [Link to Web page for GAN-Car Image Generation](https://neural-eyes.herokuapp.com/)
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
