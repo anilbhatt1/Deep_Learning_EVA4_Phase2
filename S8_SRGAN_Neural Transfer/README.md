@@ -19,8 +19,8 @@ ________
 ## Table of Contents
 
 * [Prerequisites](#prerequisites)
-* [SRGAN Working](#SRGAN Working)
-* [Neural Style Transfer Working](#Neural Style Transfer Working)
+* [SRGAN Working](#SRGAN-Working)
+* [Neural Style Transfer Working](#Neural-Style-Transfer-Working)
 * [Data Preparation](#Data-Preparation)
 * [SRGAN Architecture](#SRGAN Architecture)
 * [Colab Notebook References](#Colab Notebook References)
@@ -38,7 +38,7 @@ ________
 * [Google Colab](https://colab.research.google.com/)
 * [Open-CV](https://pypi.org/project/opencv-python/)
 
-<!-- SRGAN Working -->
+<!-- SRGAN-Working -->
 ## SRGAN Working
 - To be updated.
 
