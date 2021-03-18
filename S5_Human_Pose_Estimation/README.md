@@ -36,6 +36,8 @@ ________
 * [torchvision 0.6.1](https://pytorch.org/docs/stable/torchvision/index.html) ** Higher versions will cause storage issues while deploying to AWS Lambda
 * [Google Colab](https://colab.research.google.com/)
 * [Open-CV](https://pypi.org/project/opencv-python/)
+* [Streamlit](https://streamlit.io/)
+* [Heroku](https://dashboard.heroku.com/)
 
 <!-- HPE-Working -->
 ## HPE Working
