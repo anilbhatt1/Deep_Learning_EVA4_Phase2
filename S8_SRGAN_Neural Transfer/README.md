@@ -24,7 +24,7 @@ ________
 * [Data Preparation](#Data-Preparation)
 * [SRGAN Architecture](#SRGAN-Architecture)
 * [Colab Notebook References](#Colab-Notebook-References)
-* [Model Weight references for future training](#Model-Weight-References)
+* [Model Weight References](#Model-Weight-References)
 * [License](#license)
 * [Group Members](#group-members)
 * [Mentor](#mentor)
