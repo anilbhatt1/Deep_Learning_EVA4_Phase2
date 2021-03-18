@@ -19,10 +19,10 @@ ________
 ## Table of Contents
 
 * [Prerequisites](#prerequisites)
-* [HPE Working](#gan-working)
+* [HPE Working](#HPE-Working)
 * [Data Preparation](#Data-Preparation)
 * [Colab Notebook References](#Colab-Notebook-References)
-* [Model Weight references for future training](#model-weights)
+* [Model Weight References for future training](#model-weights)
 * [License](#license)
 * [Group Members](#group-members)
 * [Mentor](#mentor)
@@ -33,14 +33,10 @@ ________
 * [Python 3.8](https://www.python.org/downloads/) or Above
 * [Pytorch 1.5.1](https://pytorch.org/) ** Higher versions will cause storage issues while deploying to AWS Lambda 
 * [torchvision 0.6.1](https://pytorch.org/docs/stable/torchvision/index.html) ** Higher versions will cause storage issues while deploying to AWS Lambda
-* [AWS Account](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc)
-* [Serverless](https://www.serverless.com/) 
 * [Google Colab](https://colab.research.google.com/)
 * [Open-CV](https://pypi.org/project/opencv-python/)
-* [Html](https://www.w3schools.com/html/)
-* [Jquery](https://jquery.com/)
 
-<!-- HPE Working -->
+<!-- HPE-Working -->
 ## HPE Working
 - Human pose estimation (HPE) is the process of estimating the configuration of the body (pose) from a single, typically monocular, image. 
 - It can be applied to many applications such as action/activity recognition, action detection, human tracking, in movies and animation, virtual reality, human-computer interaction, video surveillance, medical assistance, self-driving, sports motion analysis, etc.
@@ -69,15 +65,15 @@ ________
 
  ![Input Sample Image](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S5_Human_Pose_Estimation/Readme_Contents/Messi_Kick.jpg)
 
-<!-- Colab Notebook References -->
+<!-- Colab-Notebook-References -->
 ## Colab Notebook References
 - Colab notebook reference is as below. Pretrained weight is used. Refer model weight reference section listed below for the same.
 https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S5_Human_Pose_Estimation/EVA4P2_S5_HPE_V2.ipynb
 - HPE generated is as below
 ![HPE Generated](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S5_Human_Pose_Estimation/Readme_Contents/Messi_Connected.jpg)
 
-<!-- Model weight References -->
-## Model Weight references for future training
+<!-- Model-Weight-References -->
+## Model Weight References
 - Refer below locations to download pretrained weights for future. ONNX quantized version and yaml file is also available.
 https://drive.google.com/drive/folders/1OJeWfBSVtMVHPqdW0ytlZ3Fsveb8Lx-x?usp=sharing
 
@@ -88,10 +84,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- GROUP MEMBERS -->
 ## Group Members
-  - [Gajanana Ganjigatti](https://github.com/gaju27) , [Gaju_on_LinkedIn](https://www.linkedin.com/in/gajanana-ganjigatti/)
   - [Anilkumar N Bhatt](https://github.com/anilbhatt1) , [Anil_on_LinkedIn](https://www.linkedin.com/in/anilkumar-n-bhatt/)
-  - [Sridevi B](https://github.com/sridevibonthu) , [Sridevi_on_LinkedIn](https://www.linkedin.com/in/sridevi-bonthu/)
-  - [SMAG TEAM](https://github.com/SMAGEVA4/session1/tree/master/Session1) :performing_arts: team github account
 
 <!-- MENTOR -->
 ## Mentor
