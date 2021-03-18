@@ -57,9 +57,9 @@ ________
 <!-- Colab-Notebook-References -->
 ## Colab Notebook References
 - To be updated.
-- 
+
 <!-- Model-Weight-References -->
-## Model Weight references for future training
+## Model Weight References
 - To be updated.
 
 <!-- LICENSE -->
