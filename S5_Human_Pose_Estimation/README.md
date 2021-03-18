@@ -32,8 +32,8 @@ ________
 
 * [Linux](https://www.tutorialspoint.com/ubuntu/index.htm)
 * [Python 3.8](https://www.python.org/downloads/) or Above
-* [Pytorch 1.5.1](https://pytorch.org/) ** Higher versions will cause storage issues while deploying to AWS Lambda 
-* [torchvision 0.6.1](https://pytorch.org/docs/stable/torchvision/index.html) ** Higher versions will cause storage issues while deploying to AWS Lambda
+* [Pytorch 1.5.0](https://pytorch.org/) ** Higher versions may cause slug space issues while deploying to Heroku 
+* [torchvision 0.6.0](https://pytorch.org/docs/stable/torchvision/index.html) ** Higher versions may cause slug space issues while deploying to Heroku
 * [Google Colab](https://colab.research.google.com/)
 * [Open-CV](https://pypi.org/project/opencv-python/)
 * [Streamlit](https://streamlit.io/)
