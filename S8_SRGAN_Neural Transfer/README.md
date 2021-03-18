@@ -19,12 +19,12 @@ ________
 ## Table of Contents
 
 * [Prerequisites](#prerequisites)
-* [SRGAN Working](#gan-working)
-* [Neural Style Transfer Working](#neural-style working)
+* [SRGAN Working](#SRGAN Working)
+* [Neural Style Transfer Working](#Neural Style Transfer Working)
 * [Data Preparation](#Data-Preparation)
-* [SRGAN Architecture](#DNN-Architecture)
-* [Colab Notebook References](#Colab-Notebook-References)
-* [Model Weight references for future training](#model-weights)
+* [SRGAN Architecture](#SRGAN Architecture)
+* [Colab Notebook References](#Colab Notebook References)
+* [Model Weight references for future training](#Model Weight references for future training)
 * [License](#license)
 * [Group Members](#group-members)
 * [Mentor](#mentor)
@@ -42,11 +42,15 @@ ________
 ## SRGAN Working
 - To be updated.
 
+<!-- Neural Style Transfer Working -->
+## Neural Style Transfer Working
+- To be updated.
+
 <!-- Data Preparation -->
 ## Data Preparation
 - To be updated.
 
-<!-- DNN Architecture -->
+<!-- SRGAN Architecture -->
 ## SRGAN Architecture
 - To be updated.
 
