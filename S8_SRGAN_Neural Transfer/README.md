@@ -22,9 +22,9 @@ ________
 * [SRGAN Working](#SRGAN-Working)
 * [Neural Style Transfer Working](#Neural-Style-Transfer-Working)
 * [Data Preparation](#Data-Preparation)
-* [SRGAN Architecture](#SRGAN Architecture)
-* [Colab Notebook References](#Colab Notebook References)
-* [Model Weight references for future training](#Model Weight references for future training)
+* [SRGAN Architecture](#SRGAN-Architecture)
+* [Colab Notebook References](#Colab-Notebook-References)
+* [Model Weight references for future training](#Model-weight-References)
 * [License](#license)
 * [Group Members](#group-members)
 * [Mentor](#mentor)
@@ -50,15 +50,15 @@ ________
 ## Data Preparation
 - To be updated.
 
-<!-- SRGAN Architecture -->
+<!-- SRGAN-Architecture -->
 ## SRGAN Architecture
 - To be updated.
 
-<!-- Colab Notebook References -->
+<!-- Colab-Notebook-References -->
 ## Colab Notebook References
 - To be updated.
 - 
-<!-- Model weight References -->
+<!-- Model-weight-References -->
 ## Model Weight references for future training
 - To be updated.
 
