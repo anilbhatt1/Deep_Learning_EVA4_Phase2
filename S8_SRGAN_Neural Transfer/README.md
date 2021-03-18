@@ -20,8 +20,9 @@ ________
 
 * [Prerequisites](#prerequisites)
 * [SRGAN Working](#gan-working)
+* [Neural Style Transfer Working](#neural-style working)
 * [Data Preparation](#Data-Preparation)
-* [VAE DNN Architecture](#DNN-Architecture)
+* [SRGAN Architecture](#DNN-Architecture)
 * [Colab Notebook References](#Colab-Notebook-References)
 * [Model Weight references for future training](#model-weights)
 * [License](#license)
@@ -34,22 +35,14 @@ ________
 * [Python 3.8](https://www.python.org/downloads/) or Above
 * [Pytorch 1.5.1](https://pytorch.org/) ** Higher versions will cause storage issues while deploying to AWS Lambda 
 * [torchvision 0.6.1](https://pytorch.org/docs/stable/torchvision/index.html) ** Higher versions will cause storage issues while deploying to AWS Lambda
-* [AWS Account](https://aws.amazon.com/free/?all-free-tier.sort-by=item.additionalFields.SortRank&all-free-tier.sort-order=asc)
-* [Serverless](https://www.serverless.com/) 
 * [Google Colab](https://colab.research.google.com/)
 * [Open-CV](https://pypi.org/project/opencv-python/)
-* [Html](https://www.w3schools.com/html/)
-* [Jquery](https://jquery.com/)
 
-<!-- VAE Working -->
-## VAE Working
-- Variational Auto-encoders(VAE) are special species of Auto-encoders.
-- Hence, let us first understand what Auto-encoders are and how they work. AE typically will have an encoder and a decoder network.
-- Encoder network will create latent vector/bottleneck from given input image.
-- Decoder network will take the bottleneck and recontruct the image.
-- Architecture will look as below. Reconstructed image will be compared against original image via a reconstruction loss as illustrated below. Loss used will be a regression loss like L1Loss, BCE or MSE loss.
+<!-- SRGAN Working -->
+## SRGAN Working
+- To be updated.
 
- ![AE Working](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/AUTOENCODERS.jpg)
+![AE Working](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/AUTOENCODERS.jpg)
  
  ![Auto Encoder Architecture](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/AE_Architecture.jpg)
 
