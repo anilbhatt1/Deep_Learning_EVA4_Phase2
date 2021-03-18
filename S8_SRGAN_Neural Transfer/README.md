@@ -24,7 +24,7 @@ ________
 * [Data Preparation](#Data-Preparation)
 * [SRGAN Architecture](#SRGAN-Architecture)
 * [Colab Notebook References](#Colab-Notebook-References)
-* [Model Weight references for future training](#Model-weight-References)
+* [Model Weight references for future training](#Model-Weight-References)
 * [License](#license)
 * [Group Members](#group-members)
 * [Mentor](#mentor)
@@ -42,7 +42,7 @@ ________
 ## SRGAN Working
 - To be updated.
 
-<!-- Neural Style Transfer Working -->
+<!-- Neural-Style-Transfer-Working -->
 ## Neural Style Transfer Working
 - To be updated.
 
@@ -58,7 +58,7 @@ ________
 ## Colab Notebook References
 - To be updated.
 - 
-<!-- Model-weight-References -->
+<!-- Model-Weight-References -->
 ## Model Weight references for future training
 - To be updated.
 
@@ -69,10 +69,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 <!-- GROUP MEMBERS -->
 ## Group Members
-  - [Gajanana Ganjigatti](https://github.com/gaju27) , [Gaju_on_LinkedIn](https://www.linkedin.com/in/gajanana-ganjigatti/)
   - [Anilkumar N Bhatt](https://github.com/anilbhatt1) , [Anil_on_LinkedIn](https://www.linkedin.com/in/anilkumar-n-bhatt/)
-  - [Sridevi B](https://github.com/sridevibonthu) , [Sridevi_on_LinkedIn](https://www.linkedin.com/in/sridevi-bonthu/)
-  - [SMAG TEAM](https://github.com/SMAGEVA4/session1/tree/master/Session1) :performing_arts: team github account
 
 <!-- MENTOR -->
 ## Mentor
