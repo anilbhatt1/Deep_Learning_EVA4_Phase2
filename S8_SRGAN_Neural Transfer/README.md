@@ -19,6 +19,7 @@ ________
 ## Table of Contents
 
 * [Prerequisites](#prerequisites)
+* [References](#references)
 * [SRGAN Working](#SRGAN-Working)
 * [Neural Style Transfer Working](#Neural-Style-Transfer-Working)
 * [Data Preparation](#Data-Preparation)
@@ -38,6 +39,11 @@ ________
 * [Google Colab](https://colab.research.google.com/)
 * [Open-CV](https://pypi.org/project/opencv-python/)
 
+## References
+* [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/abs/1609.04802)
+* [Github code reference for SRGAN](https://github.com/leftthomas/SRGAN)
+* [Neural Style Transfer using Pytorch](https://pytorch.org/tutorials/advanced/neural_style_tutorial.html)
+
 <!-- SRGAN-Working -->
 ## SRGAN Working
 - Image Super-Resolution (SR) refers to the process of recovering high-resolution images from low-resolution images. 
@@ -54,13 +60,13 @@ ________
 	  - Adversarial loss that is used in all GAN-related architectures, helps in fooling the discriminator and generally produces images which have better perceptual quality.
   - Texture Loss:
     - On account that the reconstructed image should have the same style (color, textures, contrast, etc) with the target image, texture loss is introduced in EnhanceNet. 
-	  - This loss function tries to optimize the Gram matrix of feature outputs inspired by the Style Transfer loss function.  
+    - This loss function tries to optimize the Gram matrix of feature outputs inspired by the Style Transfer loss function.  
 - As we are contructing HR images from LR images, assessment of HR image quality is very important.
 - The image quality assessment includes:
   - subjective methods based on humans' perception
   - objective computational methods (time-saving but often unable to capture the human visual perception):
     - PSNR
-	  - SSIM
+    - SSIM
 - PSNR : Peak Signal-to-Noise Ratio
   - For Image SR, PSNR is defined via the maximum pixel value (255) and the mean squared error (MSE) between images.
   - Since the PSNR is only related to the pixel-level MSE, only caring about the differences between corresponding pixels instead of visual perception, it often leads to poor performance in representing the reconstruction quality in real scenes, where we're usually more concerned with human perceptions. 
