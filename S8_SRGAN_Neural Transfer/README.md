@@ -116,7 +116,8 @@ https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/edit/master/S2_Mobilenet
 
 <!-- SRGAN-Results -->
 ## SRGAN-Results
-- To be updated.
+- Results of better resolution images generated using SRGAN listed as below
+![SRGAN Results](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S8_SRGAN_Neural%20Transfer/Readme_Images/SRGAN_Results.png)
 
 <!-- Neural Style Transfer Results -->
 ## Neural Style Transfer Results
