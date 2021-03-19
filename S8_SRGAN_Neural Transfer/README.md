@@ -130,7 +130,7 @@ https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/edit/master/S2_Mobilenet
 - Pre-trained models corresponding to styles - Mosaic, Udnie, Candy and Rain-princess were used for generating images.
 - Please check references section for original github code.
 - Style images generated based on 4 styles mentioned above corresponding to input image displayed as below.
-![Fast Neural Result]()
+![Fast Neural Result](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S8_SRGAN_Neural%20Transfer/Readme_Images/Fast_Neural_Results.png)
 
 <!-- LICENSE -->
 ## License
