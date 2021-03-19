@@ -121,7 +121,9 @@ https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/edit/master/S2_Mobilenet
 
 <!-- Neural Style Transfer Results -->
 ## Neural Style Transfer Results
-- To be updated.
+- Results of SRGAN based on pytorch tutorial (check reference) is as below. Same image was used an input & content images.
+![Neural Style Results]
+(https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S8_SRGAN_Neural%20Transfer/Readme_Images/Style%20Transfer%20Results.png)
 
 <!-- Fast-Neural-Style-Results -->
 ## Fast Neural style Results
