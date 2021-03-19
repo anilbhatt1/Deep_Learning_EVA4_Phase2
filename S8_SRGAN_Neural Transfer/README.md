@@ -22,7 +22,7 @@ ________
 * [References](#references)
 * [SRGAN Working](#SRGAN-Working)
 * [Neural Style Transfer Working](#Neural-Style-Transfer-Working)
-* [Data Preparation](#Data-Preparation)
+* [Data Preparation For SRGANs](#Data-Preparation-For-SRGANs)
 * [SRGAN Architecture](#SRGAN-Architecture)
 * [Colab Notebook References](#Colab-Notebook-References)
 * [Model Weight References](#Model-Weight-References)
@@ -78,12 +78,20 @@ ________
   - SSIM (proposed to be closer to human perception compared to PSNR) measures the structural similarity between images in terms of luminance, contrast, and structures.
   - Refer the image below to understand how image quality varies for different PSNR and SSIM combinations
  ![PSNR_SSIM](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S8_SRGAN_Neural%20Transfer/Readme_Images/PSNR_SSIM%20Variations.jpeg) 
+ 
 <!-- Neural-Style-Transfer-Working -->
 ## Neural Style Transfer Working
-- To be updated.
+- Neural-Style, or Neural-Transfer, allows us to take an image and reproduce it with a new artistic style.
+- The algorithm takes three images, an input image, a content-image, and a style-image, and changes the input to resemble the content of the content-image and the artistic style of the style-image.
+- The principle is simple: we define two distances, one for the content (DC) and one for the style (DS). 
+- DC measures how different the content is between two images while DS measures how different the style is between two images. 
+- Then, we take a third image, the input, and transform it to minimize both its content-distance with the content-image and its style-distance with the style-image.
+- An example as given below:
+![Neural style example]
+(https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S8_SRGAN_Neural%20Transfer/Readme_Images/Neuralstyle.png)
 
 <!-- Data Preparation -->
-## Data Preparation
+## Data Preparation For SRGANs
 - To be updated.
 
 <!-- SRGAN-Architecture -->
