@@ -26,6 +26,9 @@ ________
 * [SRGAN Architecture](#SRGAN-Architecture)
 * [Colab Notebook References](#Colab-Notebook-References)
 * [Model Weight References](#Model-Weight-References)
+* [SRGAN Results](#SRGAN-Results)
+* [Neural Style Transfer Results](#Neural-Style-Transfer-Results)
+* [Fast Neural style Results](#Fast-Neural-Style-Results)
 * [License](#license)
 * [Group Members](#group-members)
 * [Mentor](#mentor)
@@ -43,7 +46,7 @@ ________
 * [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/abs/1609.04802)
 * [Github code reference for SRGAN(leftthomas)](https://github.com/leftthomas/SRGAN)
 * [Neural Style Transfer using Pytorch](https://pytorch.org/tutorials/advanced/neural_style_tutorial.html)
-* [Fast Neural Style Guthub reference](https://github.com/pytorch/examples/tree/6c8e2bab4d45f2386929c83bb4480c18d2b660fd/fast_neural_style)
+* [Fast Neural Style Github reference](https://github.com/pytorch/examples/tree/6c8e2bab4d45f2386929c83bb4480c18d2b660fd/fast_neural_style)
 
 <!-- SRGAN-Working -->
 ## SRGAN Working
@@ -110,6 +113,22 @@ https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/edit/master/S2_Mobilenet
 <!-- Model-Weight-References -->
 ## Model Weight References
 - To be updated.
+
+<!-- SRGAN-Results -->
+## SRGAN-Results
+- To be updated.
+
+<!-- Neural Style Transfer Results -->
+## Neural Style Transfer Results
+- To be updated.
+
+<!-- Fast-Neural-Style-Results -->
+## Fast Neural style Results
+- Fast Neural style was also tried out to generate style images.
+- Pre-trained models corresponding to styles - Mosaic, Udnie, Candy and Rain-princess were used for generating images.
+- Please check references section for original github code.
+- Style images generated based on 4 styles mentioned above corresponding to input image displayed as below.
+![Fast Neural Result]()
 
 <!-- LICENSE -->
 ## License
