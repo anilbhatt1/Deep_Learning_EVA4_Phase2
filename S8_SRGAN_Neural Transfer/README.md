@@ -13,7 +13,8 @@
 # Image Super Resolution Using SRGANs and Neural Style Transfer
 ________
 
-# [Link to Web page for Restful API call](To be updated)
+# Link to Heroku Web page for SRGAN and Fast-Neural Style
+- https://neural-eyes.herokuapp.com/
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
