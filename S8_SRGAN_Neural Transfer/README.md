@@ -73,6 +73,7 @@ ________
   - Since the PSNR is only related to the pixel-level MSE, only caring about the differences between corresponding pixels instead of visual perception, it often leads to poor performance in representing the reconstruction quality in real scenes, where we're usually more concerned with human perceptions. 
   - An example as below.
   - Hence we need to assess structural similarity too which is closer to human perception.
+  !(https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S8_SRGAN_Neural%20Transfer/Readme_Images/Same%20PSNR%20Images.jpg)
 - SSIM : Structural Similarity
   - SSIM (proposed to be closer to human perception compared to PSNR) measures the structural similarity between images in terms of luminance, contrast, and structures.
   - Refer the image below to understand how image quality varies for different PSNR and SSIM combinations
