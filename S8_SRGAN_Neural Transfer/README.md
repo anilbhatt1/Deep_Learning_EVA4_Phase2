@@ -108,7 +108,14 @@ https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/edit/master/S2_Mobilenet
 ![Architecture](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S8_SRGAN_Neural%20Transfer/Readme_Images/SRGAN_Network%20Design.png)
 <!-- Colab-Notebook-References -->
 ## Colab Notebook References
-- To be updated.
+- Colab notebook link for SRGAN that was tried out on flying objects. Original github code built by leftthomas can be found in references section.
+https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S8_SRGAN_Neural%20Transfer/EVA4P2_S8_SRGAN_V2.ipynb
+- Colab notebook link for SRGAN evaluation.
+https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S8_SRGAN_Neural%20Transfer/EVA4P2_S8_SRGAN_V3_Eval.ipynb
+- Colab notebook link for Neural Style Transfer based on pytorch tutorial.
+https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S8_SRGAN_Neural%20Transfer/EVA4P2_S8_Neural_Transfer_V2.ipynb
+- Colab notebook link for Neural Fast Style Transfer that was tried out. Original github code can be found in references section.
+https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S8_SRGAN_Neural%20Transfer/EVA4P2_S8_Fast_Style_Transfer_V1.ipynb
 
 <!-- Model-Weight-References -->
 ## Model Weight References
