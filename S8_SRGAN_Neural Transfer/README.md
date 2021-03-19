@@ -97,7 +97,7 @@ https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/edit/master/S2_Mobilenet
 - 250 images each from flying birds, small quad, large quad and winged drones were used for training.
 - 5 images each from flying birds, small quad, large quad and winged drones that were not part of training was used for evaluation.
 - Sample images used are as below.
-![Sample Data](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S8_SRGAN_Neural%20Transfer/Readme_Images/Sample Data SRGAN.jpg)
+![Sample Data](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S8_SRGAN_Neural%20Transfer/Readme_Images/Sample%20Data%20SRGAN.jpg)
 
 <!-- SRGAN-Architecture -->
 ## SRGAN Architecture
