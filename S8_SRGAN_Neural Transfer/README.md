@@ -77,7 +77,7 @@ ________
 - SSIM : Structural Similarity
   - SSIM (proposed to be closer to human perception compared to PSNR) measures the structural similarity between images in terms of luminance, contrast, and structures.
   - Refer the image below to understand how image quality varies for different PSNR and SSIM combinations
-  
+ ![PSNR_SSIM](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S8_SRGAN_Neural%20Transfer/Readme_Images/PSNR_SSIM%20Variations.jpeg) 
 <!-- Neural-Style-Transfer-Working -->
 ## Neural Style Transfer Working
 - To be updated.
@@ -88,8 +88,8 @@ ________
 
 <!-- SRGAN-Architecture -->
 ## SRGAN Architecture
-- To be updated.
-
+- SRGAN architecture created based on "Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network" paper is as below
+![Architecture](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S8_SRGAN_Neural%20Transfer/Readme_Images/SRGAN_Network%20Design.png)
 <!-- Colab-Notebook-References -->
 ## Colab Notebook References
 - To be updated.
