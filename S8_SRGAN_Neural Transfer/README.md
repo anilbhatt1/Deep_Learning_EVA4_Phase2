@@ -86,9 +86,8 @@ ________
 - The principle is simple: we define two distances, one for the content (DC) and one for the style (DS). 
 - DC measures how different the content is between two images while DS measures how different the style is between two images. 
 - Then, we take a third image, the input, and transform it to minimize both its content-distance with the content-image and its style-distance with the style-image.
-- An example as given below:
-![Neural style example]
-(https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S8_SRGAN_Neural%20Transfer/Readme_Images/Neuralstyle.png)
+- An example as given below
+![Neural style example](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S8_SRGAN_Neural%20Transfer/Readme_Images/Neuralstyle.png)
 
 <!-- Data Preparation -->
 ## Data Preparation For SRGANs
