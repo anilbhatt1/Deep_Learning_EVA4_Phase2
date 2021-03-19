@@ -38,8 +38,8 @@ ________
 
 * [Linux](https://www.tutorialspoint.com/ubuntu/index.htm)
 * [Python 3.8](https://www.python.org/downloads/) or Above
-* [Pytorch 1.5.1](https://pytorch.org/) ** Higher versions will cause storage issues while deploying to AWS Lambda 
-* [torchvision 0.6.1](https://pytorch.org/docs/stable/torchvision/index.html) ** Higher versions will cause storage issues while deploying to AWS Lambda
+* [Pytorch 1.5.0](https://pytorch.org/) ** Higher versions may cause slugspace issues while deploying to Heroku 
+* [torchvision 0.6.0](https://pytorch.org/docs/stable/torchvision/index.html) ** Higher versions may cause slugspace  issues while deploying to Heroku
 * [Google Colab](https://colab.research.google.com/)
 * [Open-CV](https://pypi.org/project/opencv-python/)
 
@@ -97,7 +97,7 @@ ________
 ## Data Preparation For SRGANs
 - Same flying objects data that was prepared for S2_Mobilenet was used for training SRGANs.
 - Github reference detailing data preparation is as below:
-https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/edit/master/S2_Mobilenet_QuadCopters_Lambda/README.md
+https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/tree/master/S2_Mobilenet_QuadCopters_Lambda
 - 250 images each from flying birds, small quad, large quad and winged drones were used for training.
 - 5 images each from flying birds, small quad, large quad and winged drones that were not part of training was used for evaluation.
 - Sample images used are as below.
