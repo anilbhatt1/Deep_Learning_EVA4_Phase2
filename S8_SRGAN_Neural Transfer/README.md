@@ -91,7 +91,13 @@ ________
 
 <!-- Data Preparation -->
 ## Data Preparation For SRGANs
-- To be updated.
+- Same flying objects data that was prepared for S2_Mobilenet was used for training SRGANs.
+- Github reference detailing data preparation is as below:
+https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/edit/master/S2_Mobilenet_QuadCopters_Lambda/README.md
+- 250 images each from flying birds, small quad, large quad and winged drones were used for training.
+- 5 images each from flying birds, small quad, large quad and winged drones that were not part of training was used for evaluation.
+- Sample images used are as below.
+![Sample Data](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S8_SRGAN_Neural%20Transfer/Readme_Images/Sample Data SRGAN.jpg)
 
 <!-- SRGAN-Architecture -->
 ## SRGAN Architecture
