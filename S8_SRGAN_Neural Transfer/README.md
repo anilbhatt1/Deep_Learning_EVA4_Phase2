@@ -119,7 +119,10 @@ https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S8_SRGAN_Neu
 
 <!-- Model-Weight-References -->
 ## Model Weight References
-- To be updated.
+- SRGAN weights for Generator(G) and Discriminator(D) after training using flying objects for 999 epochs can be downloaded from below link
+https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/upload/master/S8_SRGAN_Neural%20Transfer/Model_Weights/SRGAN
+- Fast Neural Style transfer weights (both GPU and CPU) after fixing invalid dictionary key can be downloaded from below link. Weights for 4 styles - Mosaic, Udnie, Candy, rain-princess can be found.
+https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/tree/master/S8_SRGAN_Neural%20Transfer/Model_Weights/Fast_Neural
 
 <!-- SRGAN-Results -->
 ## SRGAN-Results
