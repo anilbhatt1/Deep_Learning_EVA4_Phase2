@@ -10,10 +10,10 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-# Image Super Resolution Using SRGANs and Neural Style Transfer
+# Neural Style Transfer & Image Super Resolution Using SRGANs
 ________
 
-# Link to Heroku Web page for SRGAN and Fast-Neural Style
+## Link to Heroku Web page for SRGAN and Fast-Neural Style
 - https://neural-eyes.herokuapp.com/
 
 <!-- TABLE OF CONTENTS -->
