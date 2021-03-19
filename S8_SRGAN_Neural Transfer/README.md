@@ -41,8 +41,9 @@ ________
 
 ## References
 * [Photo-Realistic Single Image Super-Resolution Using a Generative Adversarial Network](https://arxiv.org/abs/1609.04802)
-* [Github code reference for SRGAN](https://github.com/leftthomas/SRGAN)
+* [Github code reference for SRGAN(leftthomas)](https://github.com/leftthomas/SRGAN)
 * [Neural Style Transfer using Pytorch](https://pytorch.org/tutorials/advanced/neural_style_tutorial.html)
+* [Fast Neural Style Guthub reference](https://github.com/pytorch/examples/tree/6c8e2bab4d45f2386929c83bb4480c18d2b660fd/fast_neural_style)
 
 <!-- SRGAN-Working -->
 ## SRGAN Working
