@@ -20,9 +20,9 @@ ________
 ## Table of Contents
 
 * [Prerequisites](#prerequisites)
-* [Tokenization - How to feed text data to neural networks](#tokenization)
+* [Tokenization-How to feed text data to neural networks](#tokenization)
 * [Why neural embeddings are preferred](#neuralembeddings)
-* [Word2Vec - CBOW and Skipgram](#word2vec)
+* [Word2Vec-CBOW and Skipgram](#word2vec)
 * [Colab Notebook References](#Colab-Notebook-References)
 * [Model Weight references for future training](#model-weights)
 * [License](#license)
