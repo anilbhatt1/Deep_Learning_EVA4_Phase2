@@ -112,13 +112,15 @@ ________
 - As it is a binary classification problem, we are using nn.BCEWithLogitsLoss() as loss function
 - Model performance further improves with Val. Acc: 90.74%. Trained for 20 epochs.
 ### https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Convolutional_Sentiment_Analysis.ipynb
-- Task : Predict sentiment (+ve 1 or -ve 0) from IMDB movie reviews
+- Task : Predict sentiment (between 0 & 1) from IMDB movie reviews
 - Tokenizer : Spacy. Built vocabulary from glove.6B.100D and pre-trained glove embedding is used. As dataset is large only top 25000 words are used for building vocab, rest are treated as <unk>.
 - CNN model is used. We decide n-grams using different filter sizes. Eg: filter_size = 3, tri-grams used
 - Architecture is as depicted below.
 ![CNN](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/CNN.jpg)
 - As it is a binary classification problem, we are using nn.BCEWithLogitsLoss() as loss function
 - Model performance slightly drops with Val. Acc: 88.09% but processing becomes much faster. Trained for 20 epochs.
+- Refer for CPU models & vocab pkl file creation for future 
+https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Convolutional_Sentiment_Analysis_cpu.ipynb
 ### https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Multi_Class_Question_Type_Analysis.ipynb
 - Task : TREC dataset used here. This is a dataset of questions and task is to classify what category question belongs to. eg: HUM for questions about humans
 - Total 6 category of questions are present, hence number of classes = 6
@@ -136,7 +138,7 @@ ________
 
 <!-- Model weight References -->
 ## Model Weight references for future training
-- Refer below locations to download pretrained weights for future. Only GPU versions(for colab training) are available.
+- Refer below locations to download pretrained weights for future. GPU versions(for colab training) are available for all versions. CPU versions are available for Convolutional sentiment analysis and multi-class question type models.
 https://drive.google.com/drive/folders/1Vmb34RHxjtKf19HmfMfwO3sjri_XwY4u?usp=sharings
 
 <!-- LICENSE -->
