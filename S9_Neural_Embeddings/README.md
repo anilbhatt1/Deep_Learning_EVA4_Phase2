@@ -77,7 +77,7 @@ ________
 
 ![One_hot vs Word_Embedding](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/One_hot%20vs%20Word%20Embedding.jpg)
 
-<!-- Word2vec-CBOW-and-Skipgram -->
+<!-- Word2vec-CBOW-And-Skipgram -->
 ## Word2Vec - CBOW and Skipgram
 - Word2Vec is a shallow, two-layer neural network which is trained to reconstruct linguistic contexts of words.
 - It comes in two flavors, the Continuous Bag-of-Words (CBOW) model and the Skip-Gram model.
