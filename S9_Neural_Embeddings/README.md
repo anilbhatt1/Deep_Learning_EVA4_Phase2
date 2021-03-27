@@ -22,9 +22,9 @@ ________
 * [Prerequisites](#prerequisites)
 * [Tokenization](#Tokenization)
 * [Why Neural Embeddings Are Preferred](#Why-Neural-Embeddings-Are-Preferred)
-* [Word2vec CBOW And Skipgram](#Word2vec-CBOW-And-Skipgram)
+* [Word2vec CBOW And Skipgram](#Wordvec-Cbow-And-Skipgram)
 * [Colab Notebook References](#Colab-Notebook-References)
-* [Model Weight references for future training](#model-weights)
+* [Model Weight References For Future Training](#Model-Weight-References-For-Future-Training)
 * [License](#license)
 * [Mentor](#mentor)
 
@@ -77,8 +77,8 @@ ________
 
 ![One_hot vs Word_Embedding](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/One_hot%20vs%20Word%20Embedding.jpg)
 
-<!-- Word2vec-CBOW-And-Skipgram -->
-## Word2Vec - CBOW and Skipgram
+<!-- Wordvec-Cbow-And-Skipgram -->
+## Word2Vec:CBOW and Skipgram
 - Word2Vec is a shallow, two-layer neural network which is trained to reconstruct linguistic contexts of words.
 - It comes in two flavors, the Continuous Bag-of-Words (CBOW) model and the Skip-Gram model.
 - Algorithmically both are similar as shown below:
@@ -135,8 +135,8 @@ https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Em
 - As it is a binary classification problem, we are using nn.BCEWithLogitsLoss() as loss function
 - Processing takes significant amount of time ~ 18 minutes for 1 epoch. Accuracy also jumps up Val. Acc: 92.52% trained for 5 epochs
 
-<!-- Model weight References -->
-## Model Weight references for future training
+<!-- Model-Weight-References-For-Future-Training -->
+## Model Weight References For Future Training
 - Refer below locations to download pretrained weights for future. GPU versions(for colab training) are available for all versions. CPU versions are available for Convolutional sentiment analysis and multi-class question type models.
 https://drive.google.com/drive/folders/1Vmb34RHxjtKf19HmfMfwO3sjri_XwY4u?usp=sharings
 
