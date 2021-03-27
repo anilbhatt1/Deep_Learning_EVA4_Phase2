@@ -39,7 +39,7 @@ ________
 * [en-core-web-sm](https://github.com/explosion/spacy-models/releases/download/en_core_web_sm-2.3.1/en_core_web_sm-2.3.1.tar.gz#egg=en_core_web_sm==2.3.1)
 
 <!-- Tokenization-How-to-feed-text-data-to-neural-networks -->
-## Tokenization - How to feed text data to neural networks
+## Tokenization-How to feed text data to neural networks
 - Neural networks only understand numbers. Hence like images, text also needs to be converted to numbers to feed to neural networks.
 - We can call this vectorization i.e. converting text into vectors. 
 - There are mainly 2 parts involved in vectorization of text - tokenization and numericalization.
