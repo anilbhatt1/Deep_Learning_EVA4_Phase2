@@ -22,7 +22,7 @@ ________
 * [Prerequisites](#prerequisites)
 * [Tokenization](#Tokenization)
 * [Why Neural Embeddings Are Preferred](#Why-Neural-Embeddings-Are-Preferred)
-* [Word2Vec-CBOW And Skipgram](#Word2vec-CBOW-And-Skipgram)
+* [Word2vec-CBOW And Skipgram](#Word2vec-CBOW-And-Skipgram)
 * [Colab Notebook References](#Colab-Notebook-References)
 * [Model Weight references for future training](#model-weights)
 * [License](#license)
