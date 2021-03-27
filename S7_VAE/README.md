@@ -22,9 +22,9 @@ ________
 * [Prerequisites](#prerequisites)
 * [VAE Working](#VAE-Working)
 * [Data Preparation](#Data-Preparation)
-* [VAE DNN Architecture](#DNN-Architecture)
+* [VAE DNN Architecture](#Dnn-Architecture)
 * [Colab Notebook References](#Colab-Notebook-References)
-* [Model Weight references for future training](#Model-Weights)
+* [Model Weight References For Future Training](#Model-Weight-References)
 * [License](#license)
 * [Group Members](#group-members)
 * [Mentor](#mentor)
@@ -101,7 +101,7 @@ ________
 
  ![Input Sample Images](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/Input%20Sample%20images.png)
 
-<!-- DNN-Architecture -->
+<!-- Dnn-Architecture -->
 ## VAE DNN Architecture
 - Network architecture for VAE (encoder & decoder were combined in single class) as follows:
 ![VAE Architecture](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/VAE_DNN_Architecture.jpg)
