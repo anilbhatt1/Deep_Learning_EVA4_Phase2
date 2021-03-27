@@ -22,9 +22,9 @@ ________
 * [Prerequisites](#prerequisites)
 * [VAE Working](#VAE-Working)
 * [Data Preparation](#Data-Preparation)
-* [VAE DNN Architecture](#Dnn-Architecture)
+* [VAE DNN Architecture](#VAE-DNN-Architecture)
 * [Colab Notebook References](#Colab-Notebook-References)
-* [Model Weight References For Future Training](#Model-Weight-References)
+* [Model Weight References For Future Training](#Model-Weight-References-For-Future-Training)
 * [License](#license)
 * [Group Members](#group-members)
 * [Mentor](#mentor)
@@ -101,7 +101,7 @@ ________
 
  ![Input Sample Images](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S6_GAN/Readme_Contents/Input%20Sample%20images.png)
 
-<!-- Dnn-Architecture -->
+<!-- VAE-DNN-Architecture -->
 ## VAE DNN Architecture
 - Network architecture for VAE (encoder & decoder were combined in single class) as follows:
 ![VAE Architecture](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/VAE_DNN_Architecture.jpg)
@@ -121,8 +121,8 @@ https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/anima
 - Images generated via VAE vs Original Image
 ![Images Generated](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S7_VAE/Readme_Content/Generated%20vs%20Original.jpg)
 
-<!-- Model-Weight-References -->
-## Model Weight references for future training
+<!-- Model-Weight-References-For-Future-Training -->
+## Model Weight References For Future Training
 - Refer below locations to download pretrained weights for future. Both CPU (jit traced for AWS lambda deployments) and GPU versions(for colab training) are available.
 https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/tree/master/S7_VAE/Model%20Weights
 
