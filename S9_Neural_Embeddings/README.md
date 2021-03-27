@@ -21,7 +21,7 @@ ________
 
 * [Prerequisites](#prerequisites)
 * [Tokenization](#Tokenization)
-* [Why neural embeddings are preferred](#neuralembeddings)
+* [Why Neural Embeddings Are Preferred](#Why-Neural-Embeddings-Are-Preferred)
 * [Word2Vec-CBOW and Skipgram](#word2vec)
 * [Colab Notebook References](#Colab-Notebook-References)
 * [Model Weight references for future training](#model-weights)
@@ -65,8 +65,8 @@ ________
   https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Faster_Sentiment_Analysis_using_FastText.ipynb
   https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Convolutional_Sentiment_Analysis.ipynb
 
-<!-- neuralembeddings -->
-## Why neural embeddings are preferred
+<!-- Why-Neural-Embeddings-Are-Preferred -->
+## Why Neural Embeddings Are Preferred
 - There are multiple ways to associate a vector with word - one is one-hot encoding, another is word embeddings.
 - Problem with one-hot encoding that it will return a sparse high-dimensional vector which is expensive. Example : Let us say our vocabulary has 100 words 
   and "Therefore" is one among these words. Let us say a sentence having "Therefore" comes up for vectorization. In this case, token for "Therefore" will be 
