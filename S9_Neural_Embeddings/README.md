@@ -86,7 +86,7 @@ ________
 - Example of CBOW vs Skip-Gram is as below:
 ![Example](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/CBOW_Example.png)
 
-<!-- Colab Notebook References -->
+<!-- Colab-Notebook-References -->
 ## Colab Notebook References
 - Below ipynb notebooks will help us to get a better understanding on NLP models. Details are as below.
 - Original source of these notebooks https://github.com/bentrevett/pytorch-sentiment-analysis
