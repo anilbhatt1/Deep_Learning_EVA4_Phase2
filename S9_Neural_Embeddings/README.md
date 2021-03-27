@@ -13,7 +13,8 @@
 # Neural Embeddings
 ________
 
-# [Link to Web page for Restful API call](To be updated)
+## Link to Heroku Web page for Sentiment Analysis and Multi-class question type
+- https://neural-eyes.herokuapp.com/
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
