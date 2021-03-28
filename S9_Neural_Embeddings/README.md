@@ -118,7 +118,7 @@ ________
 ![CNN](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/CNN.jpg)
 - As it is a binary classification problem, we are using nn.BCEWithLogitsLoss() as loss function
 - Model performance slightly drops with Val. Acc: 88.09% but processing becomes much faster. Trained for 20 epochs.
-- Refer for CPU models & vocab pkl file creation for future 
+- Refer for CPU models & vocab pkl file creation for future training/edge deployment.
 https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Convolutional_Sentiment_Analysis_cpu.ipynb
 ### https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Multi_Class_Question_Type_Analysis.ipynb
 - Task : TREC dataset used here. This is a dataset of questions and task is to classify what category question belongs to. eg: HUM for questions about humans
@@ -127,6 +127,8 @@ https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Em
 - Same CNN model as earlier is used. 
 - As it is a multi classification problem, we are using nn.CrossEntropyLoss() as loss function
 - Model performance is good with Val. Acc: 83.97% when trained for 20 epochs
+- Refer for CPU models & vocab pkl file creation for future training/edge deployment.
+https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Multi_Class_Question_Type_Analysis_cpu.ipynb
 ### https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S9_Neural_Embeddings/E4P2S9_Transformer_Senti_Analysis.ipynb
 - Task : Predict sentiment (+ve 1 or -ve 0) from IMDB movie reviews
 - We are using transformers here. Model/tokenizer used is BERT with no casing.
