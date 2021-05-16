@@ -13,7 +13,7 @@ Please refer https://github.com/anilbhatt1/a-PyTorch-Tutorial-to-Image-Captionin
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-# Neural Embeddings
+# Image Captioning 
 ________
 
 ## Link to Heroku Web page for Sentiment Analysis and Multi-class question type
@@ -23,7 +23,7 @@ ________
 ## Table of Contents
 
 * [Prerequisites](#prerequisites)
-* [Image Captioning](#Image-Captioning)
+* [Image Captioning - How it works](#Image-Captioning)
 * [Colab Notebook References](#Colab-Notebook-References)
 * [Model Weight References For Future Training](#Model-Weight-References-For-Future-Training)
 * [License](#license)
