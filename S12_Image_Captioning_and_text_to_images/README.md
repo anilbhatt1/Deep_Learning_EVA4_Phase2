@@ -13,14 +13,14 @@
 # Image Captioning using DNN
 ________
 
-## Link to Heroku Web page for Sentiment Analysis and Multi-class question type
+## Link to Heroku Web page for Image Captioning
 - https://neural-eyes.herokuapp.com/
 
 <!-- TABLE OF CONTENTS -->
 ## Table of Contents
 
 * [Prerequisites](#prerequisites)
-* [Image Captioning - How it works](#Image-Captioning)
+* [Image Captioning - How it works](#Image-Captioning-Working)
 * [Colab Notebook References](#Colab-Notebook-References)
 * [Model Weight References For Future Training](#Model-Weight-References-For-Future-Training)
 * [License](#license)
@@ -34,9 +34,9 @@ ________
 * [torchtext 0.6.0](https://pytorch.org/docs/stable/torchvision/index.html) ** Higher versions may cause slugspace  issues while deploying to Heroku
 * [Google Colab](https://colab.research.google.com/)
 
-<!-- Image-Captioning  - How it works-->
+<!-- Image-Captioning-Working-->
 ## Image Captioning - How it works
-- Image captioning doen here is based on "Show And Tell" paper.
+- Image captioning done here is based on "Show And Tell" paper.
 - Please refer https://github.com/anilbhatt1/a-PyTorch-Tutorial-to-Image-Captioning for detailed description.
 - Original reference is https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning
 
