@@ -35,7 +35,7 @@ ________
 * [Google Colab](https://colab.research.google.com/)
 
 <!-- Image-Captioning -->
-## Image-Captioning
+## Image Captioning - How it works
 - Image captioning doen here is based on "Show And Tell" paper.
 - Please refer https://github.com/anilbhatt1/a-PyTorch-Tutorial-to-Image-Captioning for detailed description.
 - Original reference is https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning
