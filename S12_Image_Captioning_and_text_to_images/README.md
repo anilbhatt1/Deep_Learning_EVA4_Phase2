@@ -1,6 +1,3 @@
-Please refer https://github.com/anilbhatt1/a-PyTorch-Tutorial-to-Image-Captioning for detailed description.
-
-
 <!-- PROJECT SHIELDS -->
 <!--
 *** I'm using markdown "reference style" links for readability.
@@ -50,7 +47,7 @@ https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S12_Image_Ca
 
 <!-- Model-Weight-References-For-Future-Training -->
 ## Model Weight References For Future Training
-- Refer below locations to download pretrained weights for future. GPU versions(for colab training) are available for all versions. CPU versions are available for Convolutional sentiment analysis and multi-class question type models.
+- Refer below locations to download pretrained weights for future. 
 https://drive.google.com/drive/folders/1Vmb34RHxjtKf19HmfMfwO3sjri_XwY4u?usp=sharings
 
 <!-- LICENSE -->
