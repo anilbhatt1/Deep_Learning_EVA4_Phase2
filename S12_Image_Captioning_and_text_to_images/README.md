@@ -10,7 +10,7 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-# Image Captioning 
+# Image Captioning using DNN
 ________
 
 ## Link to Heroku Web page for Sentiment Analysis and Multi-class question type
@@ -34,7 +34,7 @@ ________
 * [torchtext 0.6.0](https://pytorch.org/docs/stable/torchvision/index.html) ** Higher versions may cause slugspace  issues while deploying to Heroku
 * [Google Colab](https://colab.research.google.com/)
 
-<!-- Image-Captioning -->
+<!-- Image-Captioning  - How it works-->
 ## Image Captioning - How it works
 - Image captioning doen here is based on "Show And Tell" paper.
 - Please refer https://github.com/anilbhatt1/a-PyTorch-Tutorial-to-Image-Captioning for detailed description.
