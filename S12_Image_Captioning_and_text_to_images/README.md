@@ -21,7 +21,7 @@ ________
 
 * [Prerequisites](#prerequisites)
 * [Image Captioning - How it works](#Image-Captioning-Working)
-* [Dataset - For Training](#Dataset)
+* [Dataset](#Dataset)
 * [Colab Notebook References](#Colab-Notebook-References)
 * [Model Weight References For Future Training](#Model-Weight-References-For-Future-Training)
 * [License](#license)
@@ -42,7 +42,7 @@ ________
 - Original reference is https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning
 
 <!-- Dataset -->
-## Dataset - For Training
+## Dataset
 - Dataset used for training the model is flickr8k. Original reference listed above is using coco. However, due to space constraints sticked on to flickr8k.
 - Datasets can be downloaded from below link.
 https://drive.google.com/drive/folders/1b41UGruz0blUbnKGmALyaFtlFgE6MbHe?usp=sharing
