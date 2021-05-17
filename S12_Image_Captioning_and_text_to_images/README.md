@@ -20,7 +20,7 @@ ________
 ## Table of Contents
 
 * [Prerequisites](#prerequisites)
-* [Image Captioning - How it works](#Image-Captioning-Working)
+* [Image Captioning Working](#Image-Captioning-Working)
 * [Dataset](#Dataset)
 * [Colab Notebook References](#Colab-Notebook-References)
 * [Model Weight References For Future Training](#Model-Weight-References-For-Future-Training)
@@ -36,7 +36,7 @@ ________
 * [Google Colab](https://colab.research.google.com/)
 
 <!-- Image-Captioning-Working-->
-## Image Captioning - How it works
+## Image Captioning Working
 - Image captioning done here is based on "Show And Tell" paper.
 - Please refer https://github.com/anilbhatt1/a-PyTorch-Tutorial-to-Image-Captioning for detailed description.
 - Original reference is https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning
