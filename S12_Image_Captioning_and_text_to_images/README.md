@@ -23,6 +23,7 @@ ________
 * [Image Captioning Working](#Image-Captioning-Working)
 * [Dataset](#Dataset)
 * [Colab Notebook References](#Colab-Notebook-References)
+* [Inference Results](#Inference-Results)
 * [Model Weight References For Future Training](#Model-Weight-References-For-Future-Training)
 * [License](#license)
 * [Mentor](#mentor)
@@ -57,8 +58,8 @@ https://nbviewer.jupyter.org/github/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/ma
 - Below notebook is where inferencing was done by loading the saved model weights. Inferencing was done jpg format images.
 https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S12_Image_Captioning_and_text_to_images/EVA4P2_S12_ImageCaption_Inferencing.ipynb
 
-<!-- Results-->
-## Results
+<!-- Inference-Results-->
+## Inference Results
 - Results are as below.
 ![Image Captions generated for input images](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S12_Image_Captioning_and_text_to_images/Results.jpg)
 
