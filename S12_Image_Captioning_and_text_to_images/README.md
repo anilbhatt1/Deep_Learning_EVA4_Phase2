@@ -54,6 +54,13 @@ https://drive.google.com/drive/folders/1b41UGruz0blUbnKGmALyaFtlFgE6MbHe?usp=sha
 https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S12_Image_Captioning_and_text_to_images/EVA4P2_S12_ImageCaption_V1.ipynb
 - Below notebook is where training and saving the model weights for future reference is done. Model was originally planned for 50 epochs training. However, stopped at 28th epoch as further improvements were not observed.
 https://nbviewer.jupyter.org/github/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S12_Image_Captioning_and_text_to_images/EVA4P2_S12_ImageCaption_V2.ipynb
+- Below notebook is where inferencing was done by loading the saved model weights. Inferencing was done jpg format images.
+https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S12_Image_Captioning_and_text_to_images/EVA4P2_S12_ImageCaption_Inferencing.ipynb
+
+<!-- Results-->
+## Results
+- Results are as below.
+![Image Captions generated for input images](https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S12_Image_Captioning_and_text_to_images/Results.jpg)
 
 <!-- Model-Weight-References-For-Future-Training -->
 ## Model Weight References For Future Training
