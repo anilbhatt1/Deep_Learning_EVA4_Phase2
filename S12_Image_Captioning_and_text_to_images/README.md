@@ -21,6 +21,7 @@ ________
 
 * [Prerequisites](#prerequisites)
 * [Image Captioning - How it works](#Image-Captioning-Working)
+* [Dataset - For Training](#Dataset)
 * [Colab Notebook References](#Colab-Notebook-References)
 * [Model Weight References For Future Training](#Model-Weight-References-For-Future-Training)
 * [License](#license)
@@ -40,15 +41,24 @@ ________
 - Please refer https://github.com/anilbhatt1/a-PyTorch-Tutorial-to-Image-Captioning for detailed description.
 - Original reference is https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning
 
+<!-- Dataset -->
+## Dataset - For Training
+- Dataset used for training the model is flickr8k. Original reference listed above is using coco. However, due to space constraints sticked on to flickr8k.
+- Datasets can be downloaded from below link.
+https://drive.google.com/drive/folders/1b41UGruz0blUbnKGmALyaFtlFgE6MbHe?usp=sharing
+- Relevant data file names for training are caption_datasets.zip, Flickr8k_text.zip and Flickr8k_Dataset.zip
+
 <!-- Colab-Notebook-References -->
 ## Colab Notebook References
 - Below notebook is based on the original reference given above. Display statements are enabled in decoder network by introducing an index 'px'. 'px' is the number of iterations. Using 'px' display statements are controlled inside decoder network that will help to get an understanding of working of network. Besides, code sections are heavily commented listing out the understanding. Use this notebook to gain an understanding on data is created, how network works & how training/validation are done.
 https://github.com/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S12_Image_Captioning_and_text_to_images/EVA4P2_S12_ImageCaption_V1.ipynb
+- Below notebook is where training and saving the model weights for future reference is done. Model was originally planned for 50 epochs training. However, stopped at 28th epoch as further improvements were not observed.
+https://nbviewer.jupyter.org/github/anilbhatt1/Deep_Learning_EVA4_Phase2/blob/master/S12_Image_Captioning_and_text_to_images/EVA4P2_S12_ImageCaption_V2.ipynb
 
 <!-- Model-Weight-References-For-Future-Training -->
 ## Model Weight References For Future Training
-- Refer below locations to download pretrained weights for future. 
-https://drive.google.com/drive/folders/1Vmb34RHxjtKf19HmfMfwO3sjri_XwY4u?usp=sharings
+- Refer below location to download pretrained weights for future puposes. 
+https://drive.google.com/drive/folders/1b41UGruz0blUbnKGmALyaFtlFgE6MbHe?usp=sharing
 
 <!-- LICENSE -->
 ## License
