@@ -38,9 +38,10 @@ ________
 
 <!-- Image-Captioning-Working-->
 ## Image Captioning Working
-- Image captioning done here is based on "Show And Tell" paper.
-- Please refer https://github.com/anilbhatt1/a-PyTorch-Tutorial-to-Image-Captioning for detailed description.
+- Image captioning done here is based on "Show, Attend And Tell" paper.
 - Original reference is https://github.com/sgrvinod/a-PyTorch-Tutorial-to-Image-Captioning
+- Please refer https://github.com/anilbhatt1/a-PyTorch-Tutorial-to-Image-Captioning for detailed description used here.
+- One change in CNN network from original reference is that Resnet-18 is used instead of Resnet-101. This is to address the space constraints that will pop-up while deploying this model to cloud.
 
 <!-- Dataset -->
 ## Dataset
